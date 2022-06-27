@@ -82,14 +82,14 @@ export default function Pools() {
       </Grid>
       <Grid item xs={6}>
         <div className={classes.tvl}>
-          <span className={classes.title}>
+          {/* <span className={classes.title}>
             TVL{' '}
             {fetchVaultsDataDone && poolsTvl > 0 ? (
               formatGlobalTvl(poolsTvl)
             ) : (
               <TVLLoader className={classes.titleLoader} />
             )}
-          </span>
+          </span> */}
 
           {/* {fetchBifibuybackDone && chainBifibuyback && (
             <span className={classes.text}>
@@ -97,19 +97,19 @@ export default function Pools() {
             </span>
           )} */}
 
-          <span className={classes.text}>
+          {/* <span className={classes.text}>
             {t('Vault-Deposited')}{' '}
             {fetchVaultsDataDone && fetchBalancesDone ? (
               formatGlobalTvl(userTvl)
             ) : (
               <TVLLoader className={classes.titleLoader} />
             )}
-          </span>
+          </span> */}
 
-          <h4 className={classes.subtitle} style={{ marginTop: '16px' }}>
+          <h3 className={classes.subtitle} style={{ marginTop: '16px' }}>
             <AllInclusiveIcon className={classes.infinityIcon} />
             {t('Vault-AutocompoundingNote')}
-          </h4>
+          </h3>
         </div>
       </Grid>
 

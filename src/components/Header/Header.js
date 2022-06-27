@@ -49,7 +49,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
             <Hidden xsDown>
               <img
                 alt="Ceazor"
-                src={require(`images/CEAZOR.svg`)}
+                src={require(`images/$CEAZOR.png`)}
                 height={'40px'}
                 className={classes.logo}
               />
@@ -58,7 +58,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
             <Hidden smUp>
               <img
                 alt="Ceazor"
-                src={require(`images/CEAZOR.svg`)}
+                src={require(`images/$CEAZOR.png`)}
                 height={'35px'}
                 className={classes.logo}
               />

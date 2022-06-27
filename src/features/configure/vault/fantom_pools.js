@@ -18,7 +18,7 @@ export const fantomPools = [
     oraclePrice: 0,
     depositsPaused: false,
     status: 'active',
-    platform: 'Beefy',
+    platform: 'Beethoven-X',
     assets: ['fBEETS'],
     risks: [
       'COMPLEXITY_LOW',

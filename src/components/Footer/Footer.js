@@ -35,16 +35,6 @@ const Footer = () => {
         </a>
 
         <a
-          href="https://c.tenor.com/CcH_tGa_lwAAAAAM/clap-fry.gif"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={classes.link}
-        >
-          <i className={`fas fa-comments ${classes.linkIcon}`} />
-          <span>{t('forum')}</span>
-        </a>
-
-        <a
           href="https://github.com/Ceazor/CeazorVaultApp"
           target="_blank"
           rel="noopener noreferrer"
@@ -56,40 +46,7 @@ const Footer = () => {
       </div>
 
       <div className={classes.column}>
-        <div className={classes.title}>{t('products')}</div>
-        <a
-          href="https://www.burtschips.com/wp-content/uploads/vote-for-your-sandwich.jpg"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={classes.link}
-        >
-          <i className={`fas fa-landmark ${classes.linkIcon}`} />
-          <span>{t('gov')}</span>
-        </a>
-
-        <a
-          href="https://vote.beefy.finance"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={classes.link}
-        >
-          <i className={`fas fa-vote-yea ${classes.linkIcon}`} />
-          <span>{t('vote')}</span>
-        </a>
-
-        <a
-          href="https://app.beefy.finance"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={classes.link}
-        >
-          <i className={`fas fa-hand-holding-usd ${classes.linkIcon}`} />
-          <span>{t('app')}</span>
-        </a>
-      </div>
-
-      <div className={classes.column}>
-        <div className={classes.title}>{t('socials')}</div>
+        <div className={classes.title}>{t('Socials')}</div>
         <a
           href="https://twitter.com/ceazor7"
           target="_blank"

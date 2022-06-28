@@ -66,16 +66,6 @@ const Header = ({ links, isNightMode, setNightMode }) => {
           </Button>
         </Link>
 
-        <div className={classes.middleNav}>
-          <Hidden smDown>
-            {renderLink('vote', t('vote'), 'vote-yea', classes)}
-            {renderLink('dashboard', t('stats'), 'chart-bar', classes)}
-            {renderLink('docs', t('docs'), 'book', classes)}
-            {renderLink('blog', t('blog'), 'file-alt', classes)}
-            <InsureLink t={t} classes={classes} />
-          </Hidden>
-        </div>
-
         <Hidden smDown implementation="css">
           <div className={classes.collapse}>{links}</div>
         </Hidden>

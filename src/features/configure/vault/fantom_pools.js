@@ -4,7 +4,7 @@ export const fantomPools = [
     logo: 'single-assets/fBEETS.png',
     name: 'fBEETS Compounder',
     token: 'fBEETS',
-    tokenDescription: 'Ceazor',
+    tokenDescription: 'fBEETS',
     tokenAddress: '0xfcef8a994209d6916eb2c86cdd2afd60aa6f54b1',
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',

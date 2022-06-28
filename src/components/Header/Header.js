@@ -66,6 +66,12 @@ const Header = ({ links, isNightMode, setNightMode }) => {
           </Button>
         </Link>
 
+        <div className={classes.middleNav}>
+          <Link className={classes.btnBoost} to={`/${chain}/stake`}>
+            <img alt="Boost" src={require('images/stake/extracheese.png')} />
+          </Link>
+        </div>
+
         <Hidden smDown implementation="css">
           <div className={classes.collapse}>{links}</div>
         </Hidden>

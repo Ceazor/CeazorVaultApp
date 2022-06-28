@@ -251,14 +251,14 @@ const styles = theme => ({
     color: theme.palette.text.primary,
   },
   btnBoost: {
-    marginLeft: '10px',
+    marginLeft: '5px',
     marginRight: '5px',
     padding: '3px 4px',
     border: `solid 2px ${successColor[1]}`,
     borderRadius: '4px',
     '& img': {
       verticalAlign: 'middle',
-      height: '15px',
+      height: '30px',
     },
     '&:hover': {
       backgroundColor: successColor[1],

@@ -17,10 +17,12 @@ const Pastures = () => {
 
   return (
     <div className={classes.root}>
-      {/* <div className={classes.pastureLeft} />
-      <div className={classes.pastureRight} />
-      <div className={classes.pastureCenterBg} />
-      <div className={classes.pastureCenterFg} /> */}
+      <img
+        alt="Ceazor"
+        src={require(`images/table.png`)}
+        height={'200px'}
+        className={classes.logo}
+      />
       {cows &&
         cows.map((_, index) => <Cow key={`cow${index}`} total={cows.length} index={index} />)}
     </div>

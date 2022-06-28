@@ -8,7 +8,7 @@ export const fantomPools = [
     tokenAddress: '0xfcef8a994209d6916eb2c86cdd2afd60aa6f54b1',
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
-    earnedToken: 'ceazfBEETS',
+    earnedToken: 'ceazFBEETS',
     earnedTokenAddress: '0x38ceed0dcf80b4794566b31302e8f8863f526012',
     earnContractAddress: '0x38ceed0dcf80b4794566b31302e8f8863f526012',
     pricePerFullShare: 1,

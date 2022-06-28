@@ -60,7 +60,7 @@ export default function StakePools() {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Stake your tokens in a vault to gain an ceazTOKEN (ie ceazfBEETS), then stake your
+                Stake your tokens in a vault to gain an ceazTOKEN (ie ceazFBEETS), then stake your
                 ceazTOKEN here to earn additional rewards. These rewards may come from various
                 sources suchs as bribes, rewards incentives, or fee sharing
               </Typography>

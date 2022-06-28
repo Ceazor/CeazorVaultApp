@@ -25,7 +25,7 @@ const Footer = () => {
         </a>
 
         <a
-          href="https://i.pinimg.com/originals/7f/b2/9b/7fb29b9a1b9cdc93ada43286b946d5ec.jpg"
+          href="https://medium.com/@ceazor"
           target="_blank"
           rel="noopener noreferrer"
           className={classes.link}

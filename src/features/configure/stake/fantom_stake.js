@@ -23,7 +23,7 @@ export const fantomStakePools = [
     partners: [
       {
         logo: 'stake/CRE8R/CRE8Ryellow.png',
-        background: 'stake/beefy/background.png',
+        background: '',
         text: 'The worlds first & only decentralized Web3 content marketing agency DAO. Massively scalable. Fueled by DeFi.',
         website: 'https://cre8r.vip/',
         social: {

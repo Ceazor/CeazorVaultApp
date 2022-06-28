@@ -1,6 +1,6 @@
 {
   "App-Meta-Description": "The Multichain Yield Optimizer",
-  "Disclaimer": "Using Smart Contracts, Tokens, and Crypto is always a risk. DYOR before investing.",
+  "Disclaimer": "Using Smart Contracts, Tokens, and Crypto is always risks. DYOR before making 🥪s.",
   "Network-UnknownError": "An unknown error has occurred.",
   "Network-ConnectionRequired": "Wallet connection to {{network}} required.",
   "Network-Supports": "This app supports {{network}}.",
@@ -18,7 +18,7 @@
   "Vault-APY": "APY",
   "Vault-APYDaily": "Daily",
   "Vault-TVL": "TVL",
-  "Vault-AutocompoundingNote": "All Sandwiches are Delicions in their own way 🥪!",
+  "Vault-AutocompoundingNote": "All 🥪s are Delicions in their own way !",
   "Vault-Approving": "Approving...",
   "Vault-ApproveButton": "Approve",
   "Vault-ApprovalSuccess": "Approval success",

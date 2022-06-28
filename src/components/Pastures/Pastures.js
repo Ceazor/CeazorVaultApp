@@ -21,6 +21,12 @@ const Pastures = () => {
         alt="Ceazor"
         src={require(`images/table.png`)}
         height={'200px'}
+        width={'100%'}
+        // style={
+        //   {
+        //     backgroundSize: "cover"
+        //   }
+        // }
         className={classes.logo}
       />
       {cows &&

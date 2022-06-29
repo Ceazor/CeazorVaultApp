@@ -12,7 +12,7 @@ const styles = theme => ({
   },
   launchpool: {
     color: '#ffffff',
-    backgroundColor: theme.palette.type === 'dark' ? '#3e754e' : '#5a8f69',
+    backgroundColor: theme.palette.type === 'dark' ? '#3e754e' : '#D39608',
   },
   experimental: {
     color: '#ffffff',

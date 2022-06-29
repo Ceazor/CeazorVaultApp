@@ -117,7 +117,7 @@ const styles = theme => ({
     fontWeight: 'bold',
     fontSize: '13px',
     borderTopLeftRadius: '8px',
-    background: theme.palette.type === 'dark' ? '#5a8f69' : '#85b18b',
+    background: theme.palette.type === 'dark' ? '#D39608' : '#85b18b',
   },
 
   partnerHeader: {

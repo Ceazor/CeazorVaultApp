@@ -53,12 +53,12 @@ const styles = theme => ({
     marginTop: '8px',
     marginRight: '5px',
     padding: '4px 26px 4px 6px',
-    border: 'solid 2px #5a8f69',
+    border: 'solid 2px #D39608',
     borderRadius: '4px',
-    height: '32px',
+    height: '42px',
     whiteSpace: 'nowrap',
     position: 'relative',
-    width: '108px',
+    width: '70px',
     display: 'block',
     '& span': {
       position: 'absolute',
@@ -69,7 +69,7 @@ const styles = theme => ({
       verticalAlign: 'middle',
     },
     '&:hover': {
-      backgroundColor: '#5a8f69',
+      backgroundColor: '#D39608',
     },
     '&:hover img': {
       filter:

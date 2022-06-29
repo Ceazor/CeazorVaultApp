@@ -29,7 +29,7 @@ const styles = theme => ({
     },
   },
   boost: {
-    color: '#5a8f69',
+    color: '#D39608',
     fontWeight: 'bold',
     '& .MuiAvatar-root': {
       position: 'absolute',

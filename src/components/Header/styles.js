@@ -258,7 +258,7 @@ const styles = theme => ({
     borderRadius: '4px',
     '& img': {
       verticalAlign: 'middle',
-      height: '30px',
+      height: '35px',
     },
     '&:hover': {
       backgroundColor: successColor[1],

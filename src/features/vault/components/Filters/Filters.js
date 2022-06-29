@@ -111,6 +111,21 @@ const Filters = ({
         </FormControl>
       </Grid>
       <Grid item xs={6} sm={4} md={3}>
+        <FormControl>
+          <FormControlLabel
+            className={classes.label}
+            control={
+              <Checkbox
+                checked={filters.showBoosted}
+                onChange={() => toggleFilter('showBoosted')}
+                color="primary"
+              />
+            }
+            label={<Box className={classes.boost}>{t('ExtraCheese 🧀')}</Box>}
+          />
+        </FormControl>
+      </Grid>
+      <Grid item xs={6} sm={4} md={3}>
         {/* <FormControl>
           <FormControlLabel
             className={classes.label}
@@ -123,26 +138,6 @@ const Filters = ({
             }
             // TODO: translate labels
             label={t('Retired-Vaults')}
-          />
-        </FormControl> */}
-      </Grid>
-      <Grid item xs={6} sm={4} md={3}>
-        {/* <FormControl>
-          <FormControlLabel
-            className={classes.label}
-            control={
-              <Checkbox
-                checked={filters.showBoosted}
-                onChange={() => toggleFilter('showBoosted')}
-                color="primary"
-              />
-            }
-            label={
-              <Box className={classes.boost}>
-                {t('Boost')}
-                <Avatar className={classes.fire} src={require('images/stake/fire.png')} />
-              </Box>
-            }
           />
         </FormControl> */}
       </Grid>

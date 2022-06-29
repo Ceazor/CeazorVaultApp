@@ -7,7 +7,7 @@ export const fantomStakePools = [
     logo: 'stake/CRE8R/CRE8R.png',
     token: 'ceazFBEETS',
     tokenDecimals: 18,
-    tokenAddress: '0x38ceed0dcf80b4794566b31302e8f8863f526012', // ceazFBEETS token
+    tokenAddress: '0x58e0ac1973f9d182058e6b63e7f4979bc333f493', // ceazFBEETS token
     tokenOracle: 'tokens',
     tokenOracleId: 'fBEETS',
     earnedToken: 'CRE8R',

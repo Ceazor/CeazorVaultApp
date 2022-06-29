@@ -65,8 +65,6 @@ const initialState = {
   fetchVaultsDataPending: false,
   fetchBalancesDone: false,
   fetchBalancesPending: false,
-  fetchBifibuybackDone: false,
-  fetchBifibuybackPending: false,
   fetchApprovalPending: {},
   fetchDepositPending: {},
   fetchZapDepositPending: {},

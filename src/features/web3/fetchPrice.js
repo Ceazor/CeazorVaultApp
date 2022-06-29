@@ -30,7 +30,10 @@ const fetchTokens = async () => {
   const cacheBuster = getApiCacheBuster();
 
   try {
-    const response = await axios.get(`${apiUrl}?_=${cacheBuster}`);
+    const response = await axios.get(`${apiUrl}/prices?_=${cacheBuster}`);
+    const data = await axios.get('https://api.yearn.finance/v1/chains/250/vaults/all');
+    const fbeetsPrice = data.data.find((e: any) => e.symbol === 'yvfBEETS').tvl.price;
+    response.data['fBEETS'] = fbeetsPrice;
     return response.data;
   } catch (err) {
     console.error(err);
@@ -42,7 +45,7 @@ const fetchLPs = async () => {
   const cacheBuster = getApiCacheBuster();
 
   try {
-    const response = await axios.get(`${apiUrl}?_=${cacheBuster}`);
+    const response = await axios.get(`${apiUrl}/lps?_=${cacheBuster}`);
     return response.data;
   } catch (err) {
     console.error(err);

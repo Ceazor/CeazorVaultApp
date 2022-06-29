@@ -66,6 +66,20 @@ export default function StakePools() {
               </Typography>
             </AccordionDetails>
           </Accordion>
+          <Accordion square expanded={expanded === 'faq-2'} onChange={handleChange('faq-2')}>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography>How does ceazFBEETS earn?</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                This vault accepts fBEETS tokens and stakes then on Beethoven-X to earn more fBEETS.
+                It then harvests the rewards, takes out the 1% fee, and compounds the rest into more
+                fBEETS which it stakes to increase APY. The voting power of the fBEETS is used to
+                vote on the CRE8R:FTM Beethoven-X pool to direct rewards there. Any bribes are sent
+                to the extra cheese staker above.
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
         </Grid>
         <Grid item xs={12}>
           <Disclaimer />

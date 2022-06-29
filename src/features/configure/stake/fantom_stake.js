@@ -13,7 +13,7 @@ export const fantomStakePools = [
     earnedToken: 'CRE8R',
     earnedTokenDecimals: 18,
     earnedTokenAddress: '0x2aD402655243203fcfa7dCB62F8A08cc2BA88ae0', // CRE8R token
-    earnContractAddress: '0x2aD402655243203fcfa7dCB62F8A08cc2BA88ae0', //NEED TO DEPLOY THE REWARD FARM AND ADD ADDRESS HERE>
+    earnContractAddress: '', //NEED TO DEPLOY THE REWARD FARM AND ADD ADDRESS HERE>
     earnContractAbi: govPoolABI,
     earnedOracle: 'tokens',
     earnedOracleId: 'CRE8R',

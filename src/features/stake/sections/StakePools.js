@@ -60,9 +60,9 @@ export default function StakePools() {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Stake your tokens in a vault to gain an ceazTOKEN (ie ceazFBEETS), then stake your
-                ceazTOKEN here to earn additional rewards. These rewards may come from various
-                sources suchs as bribes, rewards incentives, or fee sharing
+                Stake your tokens in a vault to gain a ceazTOKEN (ie ceazFBEETS), then stake your
+                ceazTOKEN above to earn additional rewards. These rewards may come from various
+                sources suchs as bribes, rewards incentives, or fee sharing.
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -72,9 +72,9 @@ export default function StakePools() {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                This vault accepts fBEETS tokens and stakes then on Beethoven-X to earn more fBEETS.
-                It then harvests the rewards, takes out the 1% fee, and compounds the rest into more
-                fBEETS which it stakes to increase APY. The voting power of the fBEETS is used to
+                This vault accepts fBEETS tokens and stakes them on Beethoven-X to earn more fBEETS.
+                It then harvests the rewards, takes out the 1% performance fee, and compounds the
+                rest into more fBEETS to increase APY. The voting power of the fBEETS is used to
                 vote on the CRE8R:FTM Beethoven-X pool to direct rewards there. Any bribes are sent
                 to the extra cheese staker above.
               </Typography>

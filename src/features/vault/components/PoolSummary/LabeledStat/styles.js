@@ -30,7 +30,7 @@ const styles = theme => ({
     letterSpacing: 0,
   },
   boosted: {
-    color: '#2a9e46',
+    color: '#D39608',
     position: 'absolute',
     top: '-20px',
     left: 0,

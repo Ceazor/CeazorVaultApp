@@ -50,7 +50,7 @@
   "Vault-Harvesting": "Harvesting...",
   "Vault-HarvestButton": "Harvest",
   "Vault-HarvestConfirm": "Confirm Harvest?",
-  "Vault-HarvestDescription": "Manual harvesting is NOT NEEDED. All vaults auto-compound periodicall. This feature is available to those that want a little wFTM.  Are you sure you want to harvest?",
+  "Vault-HarvestDescription": "Manual harvesting is NOT NEEDED. All vaults auto-compound periodically. This feature is available to those that want a little wFTM.  Are you sure you want to harvest?",
   "Vault-HarvestSuccess": "Harvest Success",
   "Vault-HarvestError": "Harvest error: {{error}}",
   "Vault-LastHarvest": "Last Harvest",

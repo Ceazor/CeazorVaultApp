@@ -39,7 +39,7 @@ const HarvestSection = ({ pool, index }) => {
 
   return (
     <>
-      <Dialog open={showHarvestModal} onClose={() => setShowHarvestModal(true)}>
+      <Dialog open={showHarvestModal} onClose={() => setShowHarvestModal(false)}>
         <DialogTitle>
           <Typography className={classes.title} variant="body2">
             {t('Vault-HarvestConfirm')}
@@ -62,7 +62,7 @@ const HarvestSection = ({ pool, index }) => {
           </Button>
           <Button
             className={`${classes.showDetailButton} ${classes.showDetailButtonContained} `}
-            onClick={() => setShowHarvestModal()}
+            onClick={() => onHarvest()}
           >
             {t('Confirm')}
           </Button>

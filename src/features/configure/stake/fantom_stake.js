@@ -2,7 +2,7 @@ import { govPoolABI } from '../abi';
 
 export const fantomStakePools = [
   {
-    id: 'fantom-fBEETS',
+    id: 'ceazfBEETS XCheese',
     name: 'fBEETS Compounder',
     logo: 'stake/CRE8R/CRE8R.png',
     token: 'ceazFBEETS',
@@ -13,7 +13,7 @@ export const fantomStakePools = [
     earnedToken: 'CRE8R',
     earnedTokenDecimals: 18,
     earnedTokenAddress: '0x2aD402655243203fcfa7dCB62F8A08cc2BA88ae0', // CRE8R token
-    earnContractAddress: '0xAe71E0AeADa3bf9a188f06464528313Ce8D3E740', //NEED TO DEPLOY THE REWARD FARM AND ADD ADDRESS HERE>
+    earnContractAddress: '0xAe71E0AeADa3bf9a188f06464528313Ce8D3E740', //
     earnContractAbi: govPoolABI,
     earnedOracle: 'tokens',
     earnedOracleId: 'CRE8R',

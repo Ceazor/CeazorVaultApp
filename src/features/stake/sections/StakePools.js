@@ -56,7 +56,7 @@ export default function StakePools() {
         <Grid className={classes.faq} item xs={12} lg={9}>
           <Accordion square expanded={expanded === 'faq-1'} onChange={handleChange('faq-1')}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography>How do I get Extra Cheese? 🧀🧀</Typography>
+              <Typography>How do I get Extra Cheese?</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>

@@ -25,8 +25,8 @@ export const initialPoolState = {
   poolStatus: Object.fromEntries(
     Object.values(launchpools).map(pool => [
       pool.id,
-      pool.fixedStatus !== true && pool.status === 'active' && now >= pool.periodFinish
-        ? 'closed'
+      pool.fixedStatus !== true && pool.status === 'active' && pool.periodFinish <= now
+        ? 'open'
         : pool.status,
     ])
   ),

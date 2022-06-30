@@ -34,12 +34,12 @@ const HarvestSection = ({ pool, index }) => {
     })
       .then(() => enqueueSnackbar(t('Vault-HarvestSuccess'), { variant: 'success' }))
       .catch(error => enqueueSnackbar(t('Vault-HarvestError', { error }), { variant: 'error' }));
-    setShowHarvestModal(false);
+    setShowHarvestModal(true);
   };
 
   return (
     <>
-      <Dialog open={showHarvestModal} onClose={() => setShowHarvestModal(false)}>
+      <Dialog open={showHarvestModal} onClose={() => setShowHarvestModal(true)}>
         <DialogTitle>
           <Typography className={classes.title} variant="body2">
             {t('Vault-HarvestConfirm')}
@@ -62,28 +62,25 @@ const HarvestSection = ({ pool, index }) => {
           </Button>
           <Button
             className={`${classes.showDetailButton} ${classes.showDetailButtonContained} `}
-            onClick={() => onHarvest()}
+            onClick={() => setShowHarvestModal()}
           >
             {t('Confirm')}
           </Button>
         </DialogActions>
       </Dialog>
-      <Grid item xs={12} md={2} className={classes.sliderDetailContainer}>
-        <div className={classes.showDetailBottom}>
-          <div className={classes.showDetailLeft}>{/* {t('Vault-LastHarvest')}: */}</div>
-          <div style={{ textAlign: 'center' }}>
-            <Button
-              className={`${classes.showDetailButton} ${classes.showDetailButtonOutlined} ${classes.showResponsiveButtonCon}`}
-              style={{ marginBottom: pool.platform === 'Autofarm' ? '48px' : '12px' }}
-              type="button"
-              color="primary"
-              onClick={() => setShowHarvestModal(true)}
-            >
-              {fetchHarvestPending[index]
-                ? `${t('Vault-Harvesting')}`
-                : `${t('Vault-HarvestButton')}`}
-            </Button>
-          </div>
+      <Grid item xs={12}>
+        <div style={{ textAlign: 'center' }}>
+          <Button
+            className={`${classes.showDetailButton} ${classes.showDetailButtonOutlined} ${classes.showResponsiveButtonCon}`}
+            style={{ marginBottom: pool.platform === 'Autofarm' ? '5px' : '5px' }}
+            type="button"
+            color="primary"
+            onClick={() => setShowHarvestModal(true)}
+          >
+            {fetchHarvestPending[index]
+              ? `${t('Vault-Harvesting')}`
+              : `${t('Vault-HarvestButton')}`}
+          </Button>
         </div>
       </Grid>
     </>

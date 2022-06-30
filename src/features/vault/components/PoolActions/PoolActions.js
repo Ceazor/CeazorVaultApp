@@ -10,13 +10,13 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => ({
   notice: {
     backgroundColor: theme.palette.background.extra,
-    padding: '16px',
+    padding: '5px',
     border: '1px solid ' + theme.palette.background.border,
     color: theme.palette.text.primary,
     fontSize: '16px',
     fontWeight: '400',
     width: '100%',
-    marginTop: '24px',
+    marginTop: '4px',
   },
 }));
 
@@ -35,7 +35,7 @@ const PoolActions = ({ pool, balanceSingle, index, sharesBalance }) => {
         ) : null}
         <DepositSection index={index} pool={pool} balanceSingle={balanceSingle} />
         <WithdrawSection index={index} pool={pool} sharesBalance={sharesBalance} />
-        {shouldHideFromHarvest(pool.id) ? '' : <HarvestSection index={index} pool={pool} />}
+        <HarvestSection index={index} pool={pool} />
       </Grid>
     </NetworkRequired>
   );

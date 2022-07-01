@@ -1,5 +1,7 @@
 # Ceazor Vaults
 
+For the Smart Contracts see this repo https://github.com/Ceazor/CeazorVaults
+
 ## Overview
 
 Test FE for Test Vaults

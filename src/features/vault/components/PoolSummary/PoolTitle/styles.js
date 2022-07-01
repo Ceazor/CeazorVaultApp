@@ -71,10 +71,10 @@ const styles = theme => ({
     '&:hover': {
       backgroundColor: '#D39608',
     },
-    '&:hover img': {
-      filter:
-        'invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(1000%) contrast(1000%)',
-    },
+    // '&:hover img': {
+    //   filter:
+    //     'invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(1000%) contrast(1000%)',
+    // },
   },
 });
 

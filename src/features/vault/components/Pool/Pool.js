@@ -43,7 +43,7 @@ const Pool = ({
   const multipleLaunchpools = activeLaunchpools.length > 1;
 
   useEffect(() => {
-    const unsubscribes = activeLaunchpools.map(launchpoolId =>
+    const unsubscribes = Object.keys(launchpools).map(launchpoolId =>
       subscribe(launchpoolId, {
         poolApr: true,
         poolFinish: true,

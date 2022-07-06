@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 import { getNetworkPools, launchpools } from '../helpers/getNetworkData';
-import { apiUrl, getApiCacheBuster } from '../helpers/getApiInfo';
+import { apiUrl, yApiUrl, getApiCacheBuster } from '../helpers/getApiInfo';
 
 const pools = getNetworkPools();
 
@@ -31,7 +31,8 @@ const fetchTokens = async () => {
 
   try {
     const response = await axios.get(`${apiUrl}/prices?_=${cacheBuster}`);
-    const data = await axios.get('https://api.yearn.finance/v1/chains/250/vaults/all');
+    const data = await axios.get(yApiUrl);
+    console.log(data);
     const fbeetsPrice = data.data.find((e: any) => e.symbol === 'yvfBEETS').tvl.price;
     response.data['fBEETS'] = fbeetsPrice;
     return response.data;

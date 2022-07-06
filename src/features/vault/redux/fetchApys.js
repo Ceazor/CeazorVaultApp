@@ -6,7 +6,7 @@ import {
   VAULT_FETCH_APYS_SUCCESS,
   VAULT_FETCH_APYS_FAILURE,
 } from './constants';
-import { apiUrl, getApiCacheBuster } from '../../helpers/getApiInfo';
+import { apiUrl, yApiUrl, getApiCacheBuster } from '../../helpers/getApiInfo';
 
 export function fetchApys() {
   return dispatch => {

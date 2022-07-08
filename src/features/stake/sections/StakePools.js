@@ -52,38 +52,8 @@ export default function StakePools() {
           <StakePoolsPool key={pool.id} pool={pool} showPools={showPools} classes={classes} t={t} />
         ))}
       </Grid>
-      <Grid container spacing={4} justify={'center'}>
-        <Grid className={classes.faq} item xs={12} lg={9}>
-          <Accordion square expanded={expanded === 'faq-1'} onChange={handleChange('faq-1')}>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography>How do I get Extra Cheese?</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                Stake your tokens in a vault to gain a ceazTOKEN (ie ceazFBEETS), then stake your
-                ceazTOKEN above to earn additional rewards. These rewards may come from various
-                sources suchs as bribes, rewards incentives, or fee sharing.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion square expanded={expanded === 'faq-2'} onChange={handleChange('faq-2')}>
-            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography>How does ceazFBEETS earn?</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                This vault accepts fBEETS tokens and stakes them on Beethoven-X to earn more fBEETS.
-                It then harvests the rewards, takes out the 1% performance fee, and compounds the
-                rest into more fBEETS to increase APY. The voting power of the fBEETS is used to
-                vote on the CRE8R:FTM Beethoven-X pool to direct rewards there. Any bribes are sent
-                to the extra cheese staker above.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-        </Grid>
-        <Grid item xs={12}>
-          <Disclaimer />
-        </Grid>
+      <Grid item xs={12}>
+        <Disclaimer />
       </Grid>
     </Grid>
   );

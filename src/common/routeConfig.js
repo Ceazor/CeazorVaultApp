@@ -1,6 +1,7 @@
 import { PoolPage, StakePage } from 'features/stake';
 import { VaultPage } from 'features/vault';
 import { App, HomePage } from '../features/home';
+import { FAQ, FAQPage } from '../features/FAQ';
 
 const routes = [
   {
@@ -11,6 +12,7 @@ const routes = [
       { path: '/:chain/stake', component: StakePage },
       { path: '/:chain/stake/pool/:id', component: PoolPage },
       { path: '/:chain/vault/:vaultId', component: VaultPage },
+      { path: '/:chain/FAQ', component: FAQPage },
     ],
   },
 ];

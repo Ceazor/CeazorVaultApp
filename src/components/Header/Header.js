@@ -72,6 +72,12 @@ const Header = ({ links, isNightMode, setNightMode }) => {
           </Link>
         </div>
 
+        <div className={classes.middleNav}>
+          <Link className={classes.btnBoost} to={`/${chain}/FAQ`}>
+            <img alt="Boost" src={require('images/Sandwich.png')} />
+          </Link>
+        </div>
+
         <Hidden smDown implementation="css">
           <div className={classes.collapse}>{links}</div>
         </Hidden>

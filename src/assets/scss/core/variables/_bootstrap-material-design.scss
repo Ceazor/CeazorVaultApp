@@ -12,7 +12,7 @@ $mdb-input-font-size-base: 14px !default;
 $mdb-input-font-size-large: ceil(($font-size-base * 1.25)) !default; // ~20px
 $mdb-input-font-size-small: ceil(($font-size-base * 0.75)) !default; // ~12px
 
-$bmd-bmd-label-static-size-ratio: 75 / 100 !default;
+$bmd-bmd-label-static-size-ratio: 60 / 100 !default;
 $bmd-help-size-ratio: 75 / 100 !default;
 
 $bmd-form-control-bg-repeat-y: no-repeat !default;

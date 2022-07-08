@@ -8,7 +8,7 @@ export const formatApy = (apy, dp = 2) => {
   apy *= 100;
 
   const order = apy < 1 ? 0 : Math.floor(Math.log10(apy) / 3);
-  if (order >= units.length - 1) return `🧀🧀🧀`;
+  if (order >= units.length - 1) return `🧀`;
 
   const num = apy / 1000 ** order;
   return `${num.toFixed(dp)}${units[order]}%`;

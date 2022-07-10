@@ -1,13 +1,11 @@
 import React, { useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Accordion, AccordionDetails, Grid, makeStyles, Typography } from '@material-ui/core';
+import { Grid, makeStyles } from '@material-ui/core';
 import Disclaimer from 'components/Disclaimer/Disclaimer';
 import styles from './styles/list';
-import AccordionSummary from '@material-ui/core/AccordionSummary';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { ToggleButton, ToggleButtonGroup } from '@material-ui/lab';
 import { useLaunchpoolUpdates } from '../redux/hooks';
-import { launchpools, appNetworkId } from '../../helpers/getNetworkData';
+import { launchpools } from '../../helpers/getNetworkData';
 import { StakePoolsPool } from './StakePoolsPool';
 
 const useStyles = makeStyles(styles);
@@ -15,16 +13,8 @@ const useStyles = makeStyles(styles);
 export default function StakePools() {
   const classes = useStyles();
   const { t } = useTranslation();
-  const [expanded, setExpanded] = React.useState('faq-1');
   const [showPools, setShowActive] = React.useState('active');
   useLaunchpoolUpdates();
-
-  const handleChange = useCallback(
-    panel => (event, newExpanded) => {
-      setExpanded(newExpanded ? panel : false);
-    },
-    [setExpanded]
-  );
 
   const handleShowPools = useCallback(
     (event, value) => {

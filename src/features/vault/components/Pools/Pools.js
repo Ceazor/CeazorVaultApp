@@ -12,7 +12,6 @@ import VisiblePools from '../VisiblePools/VisiblePools';
 import styles from './styles';
 import { usePoolsTvl, useUserTvl } from '../../hooks/usePoolsTvl';
 import { formatGlobalTvl } from 'features/helpers/format';
-import { getNetworkFriendlyName } from '../../../helpers/getNetworkData';
 
 const FETCH_INTERVAL_MS = 15 * 1000;
 

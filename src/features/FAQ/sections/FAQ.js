@@ -63,6 +63,34 @@ export default function FAQ() {
               </Typography>
             </AccordionDetails>
           </Accordion>
+          <Accordion square expanded={expanded === 'faq-3'} onChange={handleChange('faq-3')}>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography>How does ceazCRE8RBPT earn?</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                This vault accepts CRE8R In F-Major Beethoven-X Liquidity Pool tokens and stakes
+                them on Beethoven-X to earn BEETS and CRE8R tokens. It then harvests the rewards,
+                takes out the 1% performance fee, uses half to add to the liquidity pool, and the
+                other half to send BEETs to ExtraCheese. To get the Extra Cheese BEETS, stake your
+                ceazCRE8RBPT vault token in Extra Cheese.
+                <br />
+                Contracts:
+                <br />
+                <a href="https://ftmscan.com/address/0xC93dd4F61C4598192f6c150Af38a58514eB3abbe">
+                  Vault: 0xC93dd4F61C4598192f6c150Af38a58514eB3abbe
+                </a>
+                <br />
+                <a href="https://ftmscan.com/address/0xBCe87B5bf9f2305f6F4Ce819F61210e8d3b783B6">
+                  Strategy: 0xBCe87B5bf9f2305f6F4Ce819F61210e8d3b783B6
+                </a>
+                <br />
+                <a href="https://ftmscan.com/address/0x6d9cCA043f7De62646e810FA19a4386c1588C02c">
+                  ExtraCheese: 0x6d9cCA043f7De62646e810FA19a4386c1588C02c
+                </a>
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
         </Grid>
         <Grid item xs={12}>
           <Disclaimer />

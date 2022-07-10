@@ -1,7 +1,7 @@
 import { PoolPage, StakePage } from 'features/stake';
 import { VaultPage } from 'features/vault';
 import { App, HomePage } from '../features/home';
-import { FAQ, FAQPage } from '../features/FAQ';
+import { FAQPage } from '../features/FAQ';
 
 const routes = [
   {

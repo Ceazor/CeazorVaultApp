@@ -2,15 +2,15 @@ export const fantomPools = [
   {
     id: 'fantom-fBEETS',
     logo: 'single-assets/fBEETS.png',
-    name: 'fBEETS Compounder',
-    token: 'fBEETS',
+    name: 'FBEETS Compounder',
+    token: 'FBEETS',
     tokenDescription: 'fBEETS voting power to vote on CRE8R:FTM Beethoven-X gauge.',
-    tokenAddress: '0xfcef8a994209d6916eb2c86cdd2afd60aa6f54b1',
+    tokenAddress: '0xfcef8a994209d6916eb2c86cdd2afd60aa6f54b1', //want token
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
     earnedToken: 'ceazFBEETS',
-    earnedTokenAddress: '0x58e0ac1973f9d182058e6b63e7f4979bc333f493',
-    earnContractAddress: '0x58e0ac1973f9d182058e6b63e7f4979bc333f493',
+    earnedTokenAddress: '0x58e0ac1973f9d182058e6b63e7f4979bc333f493', // vault token
+    earnContractAddress: '0x58e0ac1973f9d182058e6b63e7f4979bc333f493', // vault token
     pricePerFullShare: 1,
     tvl: 0,
     oracle: 'tokens',
@@ -19,7 +19,7 @@ export const fantomPools = [
     depositsPaused: false,
     status: 'active',
     platform: 'Beethoven-X',
-    assets: ['fBEETS'],
+    assets: ['FBEETS'],
     risks: [
       'COMPLEXITY_LOW',
       'BATTLE_TESTED',
@@ -29,8 +29,43 @@ export const fantomPools = [
       'CONTRACTS_VERIFIED',
     ],
     stratType: 'Compounder',
-    withdrawalFee: '0.0%',
+    withdrawalFee: '0.01%',
     buyTokenUrl: 'https://beets.fi/#/stake',
+    createdAt: 1622574935,
+  },
+  {
+    id: 'fantom-CRE8RBPT',
+    logo: 'fantom/Cre8rBPT.png',
+    name: 'CRE8R in F-Major Compounder',
+    token: 'CRE8RBPT',
+    tokenDescription: 'This is a Beethoven-x CRE8R LP token; CRE8R in F-Major',
+    tokenAddress: '0xbb4607beDE4610e80d35C15692eFcB7807A2d0A6', //want
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'ceazCRE8RBPT',
+    earnedTokenAddress: '0xC93dd4F61C4598192f6c150Af38a58514eB3abbe', //vault
+    earnContractAddress: '0xC93dd4F61C4598192f6c150Af38a58514eB3abbe', //vault
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'tokens',
+    oracleId: 'CRE8R',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'Beethoven-X',
+    assets: ['CRE8R'],
+    risks: [
+      'COMPLEXITY_LOW',
+      'BATTLE_TESTED',
+      'IL_NONE',
+      'MCAP_MEDIUM',
+      'AUDIT',
+      'CONTRACTS_VERIFIED',
+    ],
+    stratType: 'Compounder',
+    withdrawalFee: '0.01%',
+    buyTokenUrl:
+      'https://beets.fi/#/pool/0xbb4607bede4610e80d35c15692efcb7807a2d0a6000200000000000000000140',
     createdAt: 1622574935,
   },
 ];

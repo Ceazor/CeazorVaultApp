@@ -58,7 +58,7 @@ const Footer = () => {
           <span>twitter</span>
         </a>
         <a
-          href="https://t.me/ceazor"
+          href="https://https://t.me/+AM9tPNqJOy41MmE1"
           target="_blank"
           rel="noopener noreferrer"
           className={classes.link}

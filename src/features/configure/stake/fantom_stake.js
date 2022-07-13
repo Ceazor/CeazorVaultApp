@@ -36,7 +36,7 @@ export const fantomStakePools = [
 
   {
     id: 'ceazCRE8R ceazFBeets XCheese',
-    name: 'CRE8R in F-Major Compounder for ceazFBeets',
+    name: 'CRE8R in F-Major Compounder',
     logo: 'single-assets/ceazFBeets.png',
     token: 'ceazCRE8RBPT',
     tokenDecimals: 18,

@@ -33,6 +33,40 @@ export const fantomStakePools = [
       },
     ],
   },
+
+  {
+    id: 'ceazCRE8R ceazFBeets XCheese',
+    name: 'CRE8R in F-Major Compounder for ceazFBeets',
+    logo: 'single-assets/ceazFBeets.png',
+    token: 'ceazCRE8RBPT',
+    tokenDecimals: 18,
+    tokenAddress: '0xC93dd4F61C4598192f6c150Af38a58514eB3abbe', // ceaz staking token
+    tokenOracle: 'tokens',
+    tokenOracleId: 'BEETS',
+    earnedToken: 'ceazFBeets',
+    earnedTokenDecimals: 18,
+    earnedTokenAddress: '0x58E0ac1973F9d182058E6b63e7F4979bc333f493', // reward token
+    earnContractAddress: '0x27987E15D6aF423340F9ed0797E388b2f46930Ca', // xCheese Contract
+    earnContractAbi: govPoolABI,
+    earnedOracle: 'tokens',
+    earnedOracleId: 'BEETS',
+    partnership: false,
+    status: 'active',
+    fixedStatus: true,
+    partners: [
+      {
+        logo: 'stake/Beethoven-x/Beets-hero.png',
+        background: '',
+        text: 'Built on Balancer V2, Beethoven X is the first next-generation AMM protocol on Fantom Opera.',
+        website: 'https://beets.fi/#/',
+        social: {
+          DISCORD: 'https://discord.gg/jedS4zGk28',
+          twitter: 'https://twitter.com/beethoven_x',
+        },
+      },
+    ],
+  },
+  // EVERYTHING BELOW HERE IS CLOSED
   {
     id: 'ceazCRE8R XCheese',
     name: 'CRE8R in F-Major Compounder',
@@ -50,7 +84,7 @@ export const fantomStakePools = [
     earnedOracle: 'tokens',
     earnedOracleId: 'BEETS',
     partnership: false,
-    status: 'active',
+    status: 'closed',
     fixedStatus: true,
     partners: [
       {

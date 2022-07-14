@@ -71,9 +71,11 @@ export default function FAQ() {
               <Typography>
                 This vault accepts CRE8R In F-Major Beethoven-X Liquidity Pool tokens and stakes
                 them on Beethoven-X to earn BEETS and CRE8R tokens. It then harvests the rewards,
-                takes out the 1% performance fee, uses half to add to the liquidity pool, and the
-                other half to send BEETs to ExtraCheese. To get the Extra Cheese BEETS, stake your
-                ceazCRE8RBPT vault token in Extra Cheese.
+                takes out the 1% performance fee. It then uses all of the CRE8R and half of the
+                BEETS to add to the liquidity pool. The other half to it zaps into the
+                autocompounding ceazFBEETS vault and sends the ceazFBEETS tokens to ExtraCheese. To
+                get the Extra Cheese ceazFBEETS, stake your ceazCRE8RBPT vault token in Extra
+                Cheese.
                 <br />
                 Contracts:
                 <br />

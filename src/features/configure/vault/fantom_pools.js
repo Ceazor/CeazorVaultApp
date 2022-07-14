@@ -38,7 +38,7 @@ export const fantomPools = [
     logo: 'fantom/Cre8rBPT.png',
     name: 'CRE8R in F-Major Compounder',
     token: 'CRE8RBPT',
-    tokenDescription: 'This is a Beethoven-x CRE8R LP token; CRE8R in F-Major',
+    tokenDescription: 'CRE8R and half Beets to compound, half beets to ceazFBEETs',
     tokenAddress: '0xbb4607beDE4610e80d35C15692eFcB7807A2d0A6', //want
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',

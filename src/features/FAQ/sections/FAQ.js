@@ -83,8 +83,8 @@ export default function FAQ() {
                   Vault: 0xC93dd4F61C4598192f6c150Af38a58514eB3abbe
                 </a>
                 <br />
-                <a href="https://ftmscan.com/address/0xBCe87B5bf9f2305f6F4Ce819F61210e8d3b783B6">
-                  Strategy: 0xBCe87B5bf9f2305f6F4Ce819F61210e8d3b783B6
+                <a href="https://ftmscan.com/address/0xecaa165bA692a256C47306149816D7083628a367">
+                  Strategy: 0xecaa165bA692a256C47306149816D7083628a367
                 </a>
                 <br />
                 <a href="https://ftmscan.com/address/0x6d9cCA043f7De62646e810FA19a4386c1588C02c">

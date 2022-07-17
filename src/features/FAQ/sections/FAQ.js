@@ -87,8 +87,8 @@ export default function FAQ() {
                   Strategy: 0xecaa165bA692a256C47306149816D7083628a367
                 </a>
                 <br />
-                <a href="https://ftmscan.com/address/0x6d9cCA043f7De62646e810FA19a4386c1588C02c">
-                  ExtraCheese: 0x6d9cCA043f7De62646e810FA19a4386c1588C02c
+                <a href="https://ftmscan.com/address/0x27987E15D6aF423340F9ed0797E388b2f46930Ca">
+                  ExtraCheese: 0x27987E15D6aF423340F9ed0797E388b2f46930Ca
                 </a>
               </Typography>
             </AccordionDetails>

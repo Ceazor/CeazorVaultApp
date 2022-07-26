@@ -42,10 +42,10 @@ export default function FAQ() {
             <AccordionDetails>
               <Typography>
                 This vault accepts fBEETS tokens and stakes them on Beethoven-X to earn more fBEETS.
-                It then harvests the rewards, takes out the 1% performance fee, and compounds the
-                rest into more fBEETS to increase APY. The voting power of the fBEETS is used to
+                It then harvests the rewards and takes out the 1% performance fee. It then compounds
+                the rest into more fBEETS to increase APY. The voting power of the fBEETS is used to
                 vote on the CRE8R:FTM Beethoven-X pool to direct rewards there. Any bribes are sent
-                to the extra cheese staker above.
+                to the ExtraCheese.
                 <br />
                 Contracts:
                 <br />
@@ -70,12 +70,11 @@ export default function FAQ() {
             <AccordionDetails>
               <Typography>
                 This vault accepts CRE8R In F-Major Beethoven-X Liquidity Pool tokens and stakes
-                them on Beethoven-X to earn BEETS and CRE8R tokens. It then harvests the rewards,
+                them on Beethoven-X to earn BEETS and CRE8R tokens. It then harvests the rewards and
                 takes out the 1% performance fee. It then uses all of the CRE8R and half of the
                 BEETS to add to the liquidity pool. The other half to it zaps into the
                 autocompounding ceazFBEETS vault and sends the ceazFBEETS tokens to ExtraCheese. To
-                get the Extra Cheese ceazFBEETS, stake your ceazCRE8RBPT vault token in Extra
-                Cheese.
+                get the ExtraCheese ceazFBEETS, stake your ceazCRE8RBPT vault token in Extra Cheese.
                 <br />
                 Contracts:
                 <br />
@@ -89,6 +88,34 @@ export default function FAQ() {
                 <br />
                 <a href="https://ftmscan.com/address/0x27987E15D6aF423340F9ed0797E388b2f46930Ca">
                   ExtraCheese: 0x27987E15D6aF423340F9ed0797E388b2f46930Ca
+                </a>
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion square expanded={expanded === 'faq-4'} onChange={handleChange('faq-4')}>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography>How does ceazliHND earn?</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                This vault accepts Valhalla Calling By LiquidDriver tokens and stakes them on
+                LiquidDriver to earn LQDR tokens. It then harvests the rewards and takes out the 1%
+                performance fee. It then sells half of LQDR add to the liquidity pool. The other
+                half it zaps sends to ExtraCheese. To get the Extra Cheese, stake your ceazliHND
+                vault tokens in ExtraCheese.
+                <br />
+                Contracts:
+                <br />
+                <a href="https://ftmscan.com/address/0xd5Ab59A02E8610FCb9E7c7d863A9A2951dB33148">
+                  Vault: 0xd5Ab59A02E8610FCb9E7c7d863A9A2951dB33148
+                </a>
+                <br />
+                <a href="https://ftmscan.com/address/0xC7FEc1F4A0Ef5c3014e53b8b4926FE05B63dBE3F">
+                  Strategy: 0xC7FEc1F4A0Ef5c3014e53b8b4926FE05B63dBE3F
+                </a>
+                <br />
+                <a href="https://ftmscan.com/address/0x93695F2A73439C4700dD1C4d6A58FFA0f570Da8e">
+                  ExtraCheese: 0x93695F2A73439C4700dD1C4d6A58FFA0f570Da8e
                 </a>
               </Typography>
             </AccordionDetails>

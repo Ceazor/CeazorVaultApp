@@ -38,7 +38,8 @@ export const fantomPools = [
     logo: 'fantom/Cre8rBPT.png',
     name: 'CRE8R in F-Major Compounder',
     token: 'CRE8RBPT',
-    tokenDescription: 'CRE8R and half Beets to compound, half beets to ceazFBEETs',
+    tokenDescription:
+      'Beethoven to earn Beets, sells 50%, and rest converts to ceazFBeets for xCheese',
     tokenAddress: '0xbb4607beDE4610e80d35C15692eFcB7807A2d0A6', //want
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
@@ -66,6 +67,41 @@ export const fantomPools = [
     withdrawalFee: '0.01%',
     buyTokenUrl:
       'https://beets.fi/#/pool/0xbb4607bede4610e80d35c15692efcb7807a2d0a6000200000000000000000140',
+    createdAt: 1622574935,
+  },
+  {
+    id: 'fantom-liHNDBPT',
+    logo: 'fantom/liHNDBPT.png',
+    name: 'Valhalla Calling By LiquidDriver',
+    token: 'liHNDBPT',
+    tokenDescription: 'Liquid Driver to earn LQDR sells 40% and puts rest in xCheese',
+    tokenAddress: '0x8F6a658056378558fF88265f7c9444A0FB4DB4be', //want
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'ceazliHND',
+    earnedTokenAddress: '0xd5Ab59A02E8610FCb9E7c7d863A9A2951dB33148', //vault
+    earnContractAddress: '0xd5Ab59A02E8610FCb9E7c7d863A9A2951dB33148', //vault
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'tokens',
+    oracleId: '??',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'Beethoven-X',
+    assets: ['HND'],
+    risks: [
+      'COMPLEXITY_LOW',
+      'BATTLE_TESTED',
+      'IL_NONE',
+      'MCAP_MEDIUM',
+      'AUDIT',
+      'CONTRACTS_VERIFIED',
+    ],
+    stratType: 'Compounder',
+    withdrawalFee: '0.01%',
+    buyTokenUrl:
+      'https://beets.fi/#/pool/0x8f6a658056378558ff88265f7c9444a0fb4db4be0002000000000000000002b8',
     createdAt: 1622574935,
   },
 ];

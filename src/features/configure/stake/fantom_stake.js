@@ -66,6 +66,39 @@ export const fantomStakePools = [
       },
     ],
   },
+  {
+    id: 'ceazliHND LQDR XCheese',
+    name: 'Valhalla Calling By LiquidDriver Compounder',
+    logo: 'single-assets/LQDR.png',
+    token: 'ceazliHND',
+    tokenDecimals: 18,
+    tokenAddress: '0xd5Ab59A02E8610FCb9E7c7d863A9A2951dB33148', // ceaz staking token
+    tokenOracle: 'tokens',
+    tokenOracleId: 'LQDR',
+    earnedToken: 'LQDR',
+    earnedTokenDecimals: 18,
+    earnedTokenAddress: '0x10b620b2dbAC4Faa7D7FFD71Da486f5D44cd86f9', // reward token
+    earnContractAddress: '0x93695F2A73439C4700dD1C4d6A58FFA0f570Da8e', // xCheese Contract
+    earnContractAbi: govPoolABI,
+    earnedOracle: 'tokens',
+    earnedOracleId: 'LQDR',
+    partnership: false,
+    status: 'active',
+    fixedStatus: true,
+    partners: [
+      {
+        logo: 'single-assets/LQDR.png',
+        background: '',
+        text: 'Become a yield hunter with LiquidDriver - Powering deep liquidity across the Fantom Ecosystem',
+        website: 'https://www.liquiddriver.finance/',
+        social: {
+          DISCORD: 'https://discord.com/invite/6BvXc9Bbfu',
+          twitter: 'https://twitter.com/LiquidDriver',
+        },
+      },
+    ],
+  },
+
   // EVERYTHING BELOW HERE IS CLOSED
   {
     id: 'ceazCRE8R XCheese',

@@ -1,22 +1,40 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { Accordion, AccordionDetails, Grid, makeStyles, Typography } from '@material-ui/core';
 import Disclaimer from 'components/Disclaimer/Disclaimer';
 import styles from './styles/list';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-
+import Web3 from 'web3';
+import CHEESE_ABI from 'abi/strategy-extracheese.json';
 const useStyles = makeStyles(styles);
 
 export default function FAQ() {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState('faq-1');
-
+  const [cheese1, setCheese1] = React.useState('-');
+  const [cheese2, setCheese2] = React.useState('-');
   const handleChange = useCallback(
     panel => (event, newExpanded) => {
       setExpanded(newExpanded ? panel : false);
     },
     [setExpanded]
   );
+
+  useEffect(() => {
+    (async () => {
+      console.log('hi');
+      //Todo - refactor so that the addresses are pulling from the vault and not repeating contract calls
+      const web3 = new Web3('https://rpc.ankr.com/fantom/');
+      const vaultAddress1 = '0xecaa165bA692a256C47306149816D7083628a367';
+      const vaultAddress2 = '0xC7FEc1F4A0Ef5c3014e53b8b4926FE05B63dBE3F';
+      const ceazorVault1 = new web3.eth.Contract(CHEESE_ABI, vaultAddress1);
+      const ceazorVault2 = new web3.eth.Contract(CHEESE_ABI, vaultAddress2);
+      const cheeseRate1 = await ceazorVault1.methods.xCheeseRate().call();
+      const cheeseRate2 = await ceazorVault2.methods.xCheeseRate().call();
+      setCheese1(cheeseRate1);
+      setCheese2(cheeseRate2);
+    })();
+  }, [Web3]);
 
   return (
     <Grid container>
@@ -89,6 +107,8 @@ export default function FAQ() {
                 <a href="https://ftmscan.com/address/0x27987E15D6aF423340F9ed0797E388b2f46930Ca">
                   ExtraCheese: 0x27987E15D6aF423340F9ed0797E388b2f46930Ca
                 </a>
+                <br />
+                ExtraCheese Rate: {cheese1}
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -117,6 +137,8 @@ export default function FAQ() {
                 <a href="https://ftmscan.com/address/0x93695F2A73439C4700dD1C4d6A58FFA0f570Da8e">
                   ExtraCheese: 0x93695F2A73439C4700dD1C4d6A58FFA0f570Da8e
                 </a>
+                <br />
+                ExtraCheese Rate: {cheese2}
               </Typography>
             </AccordionDetails>
           </Accordion>

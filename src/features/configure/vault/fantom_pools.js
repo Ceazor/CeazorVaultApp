@@ -104,4 +104,39 @@ export const fantomPools = [
       'https://beets.fi/#/pool/0x8f6a658056378558ff88265f7c9444a0fb4db4be0002000000000000000002b8',
     createdAt: 1622574935,
   },
+  {
+    id: 'fantom-linSpiritBPT',
+    logo: 'fantom/linSpiritBPT.png',
+    name: 'Water Music By LiquidDriver',
+    token: 'linSpiritBPT',
+    tokenDescription: 'BeethovenX to earn Beets sells 10% and puts rest in xCheese as ceazFBEETS',
+    tokenAddress: '0x30A92a4EEca857445F41E4Bb836e64D66920F1C0', //want
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'ceazlinSpiritBPT',
+    earnedTokenAddress: '0x47198f4151f7aF48200999439B100d85a5697c00', //vault
+    earnContractAddress: '0x47198f4151f7aF48200999439B100d85a5697c00', //vault
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'tokens',
+    oracleId: '??',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'Beethoven-X',
+    assets: ['HND'],
+    risks: [
+      'COMPLEXITY_LOW',
+      'BATTLE_TESTED',
+      'IL_NONE',
+      'MCAP_MEDIUM',
+      'AUDIT',
+      'CONTRACTS_VERIFIED',
+    ],
+    stratType: 'Compounder',
+    withdrawalFee: '0.01%',
+    buyTokenUrl:
+      'https://beets.fi/#/pool/https://beets.fi/#/pool/0x30a92a4eeca857445f41e4bb836e64d66920f1c0000200000000000000000071',
+    createdAt: 43561861,
+  },
 ];

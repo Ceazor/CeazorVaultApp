@@ -120,6 +120,34 @@ export default function FAQ() {
               </Typography>
             </AccordionDetails>
           </Accordion>
+          <Accordion square expanded={expanded === 'faq-5'} onChange={handleChange('faq-5')}>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography>How does ceazlinSpiritBPT earn?</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                This vault accepts Water Music By LiquidDriver tokens and stakes them on BeethovenX
+                to earn BEETS tokens. It then harvests the rewards and takes out the 1% performance
+                fee. It then sells 10% of BEETS to add to the liquidity pool. The remainder zaps to
+                ceazFBeets and sends them to ExtraCheese. To get the Extra Cheese, stake your
+                ceazlinSpiritBPT vault tokens in ExtraCheese.
+                <br />
+                Contracts:
+                <br />
+                <a href="https://ftmscan.com/address/0x47198f4151f7aF48200999439B100d85a5697c00">
+                  Vault: 0x47198f4151f7aF48200999439B100d85a5697c00
+                </a>
+                <br />
+                <a href="https://ftmscan.com/address/0xd814bd9B1C6E9fB00654819DE646C318FDd09ED0">
+                  Strategy: 0xd814bd9B1C6E9fB00654819DE646C318FDd09ED0
+                </a>
+                <br />
+                <a href="https://ftmscan.com/address/0x7A3dc192B4Fce1b0Db0f9bF7Ee4e034315441bC3">
+                  ExtraCheese: 0x7A3dc192B4Fce1b0Db0f9bF7Ee4e034315441bC3
+                </a>
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
         </Grid>
         <Grid item xs={12}>
           <Disclaimer />

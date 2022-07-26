@@ -36,7 +36,7 @@ export const fantomStakePools = [
 
   {
     id: 'ceazCRE8R ceazFBeets XCheese',
-    name: 'CRE8R in F-Major Compounder',
+    name: 'CRE8R in F-Major',
     logo: 'single-assets/ceazFBeets.png',
     token: 'ceazCRE8RBPT',
     tokenDecimals: 18,
@@ -68,7 +68,7 @@ export const fantomStakePools = [
   },
   {
     id: 'ceazliHND LQDR XCheese',
-    name: 'Valhalla Calling By LiquidDriver Compounder',
+    name: 'Valhalla Calling By LiquidDriver',
     logo: 'single-assets/LQDR.png',
     token: 'ceazliHND',
     tokenDecimals: 18,
@@ -94,6 +94,38 @@ export const fantomStakePools = [
         social: {
           DISCORD: 'https://discord.com/invite/6BvXc9Bbfu',
           twitter: 'https://twitter.com/LiquidDriver',
+        },
+      },
+    ],
+  },
+  {
+    id: 'ceazlinSpirit XCheese',
+    name: 'Water Music By LiquidDriver',
+    logo: 'single-assets/ceazFBeets.png',
+    token: 'ceazlinSpiritBPT',
+    tokenDecimals: 18,
+    tokenAddress: '0x47198f4151f7aF48200999439B100d85a5697c00', // ceaz staking token
+    tokenOracle: 'tokens',
+    tokenOracleId: 'ceazFBeets',
+    earnedToken: 'ceazFBeets',
+    earnedTokenDecimals: 18,
+    earnedTokenAddress: '0x58E0ac1973F9d182058E6b63e7F4979bc333f493', // reward token
+    earnContractAddress: '0x7A3dc192B4Fce1b0Db0f9bF7Ee4e034315441bC3', // xCheese Contract
+    earnContractAbi: govPoolABI,
+    earnedOracle: 'tokens',
+    earnedOracleId: 'ceazFBeets',
+    partnership: false,
+    status: 'active',
+    fixedStatus: true,
+    partners: [
+      {
+        logo: 'stake/Beethoven-x/Beets-hero.png',
+        background: '',
+        text: 'Built on Balancer V2, Beethoven X is the first next-generation AMM protocol on Fantom Opera.',
+        website: 'https://beets.fi/#/',
+        social: {
+          DISCORD: 'https://discord.gg/jedS4zGk28',
+          twitter: 'https://twitter.com/beethoven_x',
         },
       },
     ],

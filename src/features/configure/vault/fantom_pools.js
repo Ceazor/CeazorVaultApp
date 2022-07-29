@@ -124,7 +124,7 @@ export const fantomPools = [
     depositsPaused: false,
     status: 'active',
     platform: 'Beethoven-X',
-    assets: ['HND'],
+    assets: ['SPIRIT'],
     risks: [
       'COMPLEXITY_LOW',
       'BATTLE_TESTED',

@@ -276,9 +276,6 @@ export default function StakePool(props) {
         alignItems="center"
       >
         <Grid item xs={6} sm={6} md={3}>
-          {avatar}
-        </Grid>
-        <Grid item xs={6} sm={6} md={3}>
           <Typography className={classes.title}>
             <NetworkRequired loader>{formatDecimals(userBalance)}</NetworkRequired>
           </Typography>
@@ -300,6 +297,9 @@ export default function StakePool(props) {
           <Typography className={classes.subtitle}>
             {t('Stake-Balancer-Rewards-Available')}
           </Typography>
+        </Grid>
+        <Grid item xs={6} sm={6} md={3}>
+          {avatar}
         </Grid>
       </Grid>
 

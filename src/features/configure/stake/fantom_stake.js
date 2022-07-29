@@ -130,6 +130,38 @@ export const fantomStakePools = [
       },
     ],
   },
+  {
+    id: 'ceazMIM XCheese',
+    name: 'Hundred MIM in Liquid Driver',
+    logo: 'single-assets/ceazliHND.png',
+    token: 'ceazMIM',
+    tokenDecimals: 18,
+    tokenAddress: '0xC9556DBB62535CD28DfB4f1feF75313a315A3c01', // ceaz staking token
+    tokenOracle: 'tokens',
+    tokenOracleId: 'ceazMIM',
+    earnedToken: 'ceazliHND',
+    earnedTokenDecimals: 18,
+    earnedTokenAddress: '0xd5Ab59A02E8610FCb9E7c7d863A9A2951dB33148', // reward token
+    earnContractAddress: '0x603CAf01D261d7A06A7f83c64212939bdFfCE8B1', // xCheese Contract
+    earnContractAbi: govPoolABI,
+    earnedOracle: 'tokens',
+    earnedOracleId: 'ceazliHND',
+    partnership: false,
+    status: 'active',
+    fixedStatus: true,
+    partners: [
+      {
+        logo: 'single-assets/HND.png',
+        background: '',
+        text: 'Hundred Finance is a decentralized application (dApp) that enables the lending and borrowing of cryptocurrencies',
+        website: 'https://hundred.finance/',
+        social: {
+          DISCORD: 'https://discord.gg/phK668J6dQ',
+          twitter: 'https://twitter.com/HundredFinance',
+        },
+      },
+    ],
+  },
 
   // EVERYTHING BELOW HERE IS CLOSED
   {

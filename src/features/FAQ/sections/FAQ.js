@@ -130,8 +130,8 @@ export default function FAQ() {
                   Vault: 0xd5Ab59A02E8610FCb9E7c7d863A9A2951dB33148
                 </a>
                 <br />
-                <a href="https://ftmscan.com/address/0xC7FEc1F4A0Ef5c3014e53b8b4926FE05B63dBE3F">
-                  Strategy: 0xC7FEc1F4A0Ef5c3014e53b8b4926FE05B63dBE3F
+                <a href="https://ftmscan.com/address/0xa1dfd04e963A4EE077DBda4378297aa29A4c2F91">
+                  Strategy: 0xa1dfd04e963A4EE077DBda4378297aa29A4c2F91
                 </a>
                 <br />
                 <a href="https://ftmscan.com/address/0x93695F2A73439C4700dD1C4d6A58FFA0f570Da8e">
@@ -170,6 +170,35 @@ export default function FAQ() {
               </Typography>
             </AccordionDetails>
           </Accordion>
+          <Accordion square expanded={expanded === 'faq-6'} onChange={handleChange('faq-6')}>
+            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+              <Typography>How does ceazMIM earn?</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography>
+                This vault accepts MIM tokens and supplies them to Hundred Finance to receive hMIM
+                tokens. It then stakes these hMIM tokens into Liquid Driver to earn boosted HND
+                rewards. It then harvests the rewards and takes out the 1% performance fee. It then
+                sells 40% of HND to add to the MIM holdings. The remainder zaps to ceazliHND and
+                sends them to ExtraCheese. To get the Extra Cheese, stake your ceazMIM vault tokens
+                in ExtraCheese.
+                <br />
+                Contracts:
+                <br />
+                <a href="https://ftmscan.com/address/0xC9556DBB62535CD28DfB4f1feF75313a315A3c01">
+                  Vault: 0xC9556DBB62535CD28DfB4f1feF75313a315A3c01
+                </a>
+                <br />
+                <a href="https://ftmscan.com/address/0x70378B459df98400AfB7aaFd85CD147db17556d5">
+                  Strategy: 0x70378B459df98400AfB7aaFd85CD147db17556d5
+                </a>
+                <br />
+                <a href="https://ftmscan.com/address/0x603CAf01D261d7A06A7f83c64212939bdFfCE8B1">
+                  ExtraCheese: 0x603CAf01D261d7A06A7f83c64212939bdFfCE8B1
+                </a>
+              </Typography>
+            </AccordionDetails>
+          </Accordion>
         </Grid>
         <Grid item xs={12}>
           <Disclaimer />
@@ -178,7 +207,6 @@ export default function FAQ() {
     </Grid>
   );
 }
-
 FAQ.defaultProps = {
   fromPage: 'page',
 };

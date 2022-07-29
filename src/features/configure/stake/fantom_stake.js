@@ -1,5 +1,11 @@
 import { govPoolABI } from '../abi';
-
+/**
+ * This fantomStakePools data structure assumes that pools with a status of 'closed' will NOT show on the FAQ.
+ *  Therefore, they will not have the following fields:
+ * - strategyAddress
+ * - faq.description
+ * - faq.showCheeseRate
+ */
 export const fantomStakePools = [
   {
     id: 'ceazfBEETS XCheese',
@@ -20,6 +26,15 @@ export const fantomStakePools = [
     partnership: false,
     status: 'active',
     fixedStatus: true,
+    strategyAddress: '0x38a206688332674be5ed20b5a65282224b43c189',
+    faq: {
+      description: `This vault accepts fBEETS tokens and stakes them on Beethoven-X to earn more fBEETS.
+      It then harvests the rewards and takes out the 1% performance fee. It then compounds
+      the rest into more fBEETS to increase APY. The voting power of the fBEETS is used to
+      vote on the CRE8R:FTM Beethoven-X pool to direct rewards there. Any bribes are sent
+      to the ExtraCheese.`,
+      showCheeseRate: false,
+    },
     partners: [
       {
         logo: 'stake/CRE8R/CRE8Ryellow.png',
@@ -53,6 +68,16 @@ export const fantomStakePools = [
     partnership: false,
     status: 'active',
     fixedStatus: true,
+    strategyAddress: '0xecaa165bA692a256C47306149816D7083628a367',
+    faq: {
+      description: `This vault accepts CRE8R In F-Major Beethoven-X Liquidity Pool tokens and stakes
+      them on Beethoven-X to earn BEETS and CRE8R tokens. It then harvests the rewards and
+      takes out the 1% performance fee. It then uses all of the CRE8R and half of the
+      BEETS to add to the liquidity pool. The other half to it zaps into the
+      autocompounding ceazFBEETS vault and sends the ceazFBEETS tokens to ExtraCheese. To
+      get the ExtraCheese ceazFBEETS, stake your ceazCRE8RBPT vault token in Extra Cheese.`,
+      showCheeseRate: true,
+    },
     partners: [
       {
         logo: 'stake/Beethoven-x/Beets-hero.png',
@@ -85,6 +110,15 @@ export const fantomStakePools = [
     partnership: false,
     status: 'active',
     fixedStatus: true,
+    strategyAddress: '0xC7FEc1F4A0Ef5c3014e53b8b4926FE05B63dBE3F',
+    faq: {
+      description: `This vault accepts Valhalla Calling By LiquidDriver tokens and stakes them on
+      LiquidDriver to earn LQDR tokens. It then harvests the rewards and takes out the 1%
+      performance fee. It then sells half of LQDR add to the liquidity pool. The other
+      half it zaps sends to ExtraCheese. To get the Extra Cheese, stake your ceazliHND
+      vault tokens in ExtraCheese.`,
+      showCheeseRate: true,
+    },
     partners: [
       {
         logo: 'single-assets/LQDR.png',
@@ -117,6 +151,15 @@ export const fantomStakePools = [
     partnership: false,
     status: 'active',
     fixedStatus: true,
+    strategyAddress: '0xd814bd9B1C6E9fB00654819DE646C318FDd09ED0',
+    faq: {
+      description: `This vault accepts Water Music By LiquidDriver tokens and stakes them on BeethovenX
+      to earn BEETS tokens. It then harvests the rewards and takes out the 1% performance
+      fee. It then sells 10% of BEETS to add to the liquidity pool. The remainder zaps to
+      ceazFBeets and sends them to ExtraCheese. To get the Extra Cheese, stake your
+      ceazlinSpiritBPT vault tokens in ExtraCheese.`,
+      showCheeseRate: true,
+    },
     partners: [
       {
         logo: 'stake/Beethoven-x/Beets-hero.png',
@@ -149,6 +192,16 @@ export const fantomStakePools = [
     partnership: false,
     status: 'active',
     fixedStatus: true,
+    strategyAddress: '0x70378B459df98400AfB7aaFd85CD147db17556d5', //
+    faq: {
+      description: `This vault accepts MIM tokens and supplies them to Hundred Finance to receive hMIM
+      tokens. It then stakes these hMIM tokens into Liquid Driver to earn boosted HND
+      rewards. It then harvests the rewards and takes out the 1% performance fee. It then
+      sells 40% of HND to add to the MIM holdings. The remainder zaps to ceazliHND and
+      sends them to ExtraCheese. To get the Extra Cheese, stake your ceazMIM vault tokens
+      in ExtraCheese.`,
+      showCheeseRate: true,
+    },
     partners: [
       {
         logo: 'single-assets/HND.png',

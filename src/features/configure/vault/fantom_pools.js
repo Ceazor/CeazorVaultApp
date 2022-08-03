@@ -69,41 +69,6 @@ export const fantomPools = [
     createdAt: 1622574935,
   },
   {
-    id: 'fantom-liHNDBPT',
-    logo: 'fantom/liHNDBPT.png',
-    name: 'Valhalla Calling By LiquidDriver',
-    token: 'liHNDBPT',
-    tokenDescription: 'Liquid Driver to earn LQDR sends some to xCheese',
-    tokenAddress: '0x8F6a658056378558fF88265f7c9444A0FB4DB4be', //want
-    tokenDecimals: 18,
-    tokenDescriptionUrl: '#',
-    earnedToken: 'ceazliHND',
-    earnedTokenAddress: '0xd5Ab59A02E8610FCb9E7c7d863A9A2951dB33148', //vault
-    earnContractAddress: '0xd5Ab59A02E8610FCb9E7c7d863A9A2951dB33148', //vault
-    pricePerFullShare: 1,
-    tvl: 0,
-    oracle: 'tokens',
-    oracleId: '??',
-    oraclePrice: 0,
-    depositsPaused: false,
-    status: 'active',
-    platform: 'Beethoven-X',
-    assets: ['HND'],
-    risks: [
-      'COMPLEXITY_LOW',
-      'BATTLE_TESTED',
-      'IL_NONE',
-      'MCAP_MEDIUM',
-      'AUDIT',
-      'CONTRACTS_VERIFIED',
-    ],
-    stratType: 'Compounder',
-    withdrawalFee: '0.01%',
-    buyTokenUrl:
-      'https://beets.fi/#/pool/0x8f6a658056378558ff88265f7c9444a0fb4db4be0002000000000000000002b8',
-    createdAt: 1622574935,
-  },
-  {
     id: 'fantom-linSpiritBPT',
     logo: 'fantom/linSpiritBPT.png',
     name: 'Water Music By LiquidDriver',
@@ -137,6 +102,41 @@ export const fantomPools = [
     buyTokenUrl:
       'https://beets.fi/#/pool/https://beets.fi/#/pool/0x30a92a4eeca857445f41e4bb836e64d66920f1c0000200000000000000000071',
     createdAt: 43561861,
+  },
+  {
+    id: 'fantom-liHNDBPT',
+    logo: 'fantom/liHNDBPT.png',
+    name: 'Valhalla Calling By LiquidDriver',
+    token: 'liHNDBPT',
+    tokenDescription: 'Liquid Driver to earn LQDR sends some to xCheese',
+    tokenAddress: '0x8F6a658056378558fF88265f7c9444A0FB4DB4be', //want
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'ceazliHND',
+    earnedTokenAddress: '0xd5Ab59A02E8610FCb9E7c7d863A9A2951dB33148', //vault
+    earnContractAddress: '0xd5Ab59A02E8610FCb9E7c7d863A9A2951dB33148', //vault
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'tokens',
+    oracleId: '??',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'Beethoven-X',
+    assets: ['HND'],
+    risks: [
+      'COMPLEXITY_LOW',
+      'BATTLE_TESTED',
+      'IL_NONE',
+      'MCAP_MEDIUM',
+      'AUDIT',
+      'CONTRACTS_VERIFIED',
+    ],
+    stratType: 'Compounder',
+    withdrawalFee: '0.01%',
+    buyTokenUrl:
+      'https://beets.fi/#/pool/0x8f6a658056378558ff88265f7c9444a0fb4db4be0002000000000000000002b8',
+    createdAt: 1622574935,
   },
   {
     id: 'fantom-MIM-hMIM',

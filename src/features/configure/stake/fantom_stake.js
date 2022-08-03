@@ -68,12 +68,12 @@ export const fantomStakePools = [
     partnership: false,
     status: 'active',
     fixedStatus: true,
-    strategyAddress: '0xecaa165bA692a256C47306149816D7083628a367',
+    strategyAddress: '0xD46F01C721c2F8B73d7D87ab48E26A2fEA52eA39',
     faq: {
       description: `This vault accepts CRE8R In F-Major Beethoven-X Liquidity Pool tokens and stakes
       them on Beethoven-X to earn BEETS and CRE8R tokens. It then harvests the rewards and
-      takes out the 1% performance fee. It then uses all of the CRE8R and half of the
-      BEETS to add to the liquidity pool. The other half to it zaps into the
+      takes out the 1% performance fee. It then uses all of the CRE8R and a percent of the
+      BEETS to add to the liquidity pool. The ExtraCheese Rate shows what percent is kept and zapped into the
       autocompounding ceazFBEETS vault and sends the ceazFBEETS tokens to ExtraCheese. To
       get the ExtraCheese ceazFBEETS, stake your ceazCRE8RBPT vault token in Extra Cheese.`,
       showCheeseRate: true,
@@ -114,8 +114,8 @@ export const fantomStakePools = [
     faq: {
       description: `This vault accepts Valhalla Calling By LiquidDriver tokens and stakes them on
       LiquidDriver to earn LQDR tokens. It then harvests the rewards and takes out the 1%
-      performance fee. It then sells half of LQDR add to the liquidity pool. The other
-      half it zaps sends to ExtraCheese. To get the Extra Cheese, stake your ceazliHND
+      performance fee. It then sells some of LQDR add to the liquidity pool. The ExtraCheese Rate shows what percent is kept and
+      sent to ExtraCheese. To get the Extra Cheese, stake your ceazliHND
       vault tokens in ExtraCheese.`,
       showCheeseRate: true,
     },
@@ -155,8 +155,8 @@ export const fantomStakePools = [
     faq: {
       description: `This vault accepts Water Music By LiquidDriver tokens and stakes them on BeethovenX
       to earn BEETS tokens. It then harvests the rewards and takes out the 1% performance
-      fee. It then sells 10% of BEETS to add to the liquidity pool. The remainder zaps to
-      ceazFBeets and sends them to ExtraCheese. To get the Extra Cheese, stake your
+      fee. It then sells a percent of BEETS to add to the liquidity pool. The ExtraCheese Rate shows what percent is kept and
+      zapped to ceazFBeets and sends them to ExtraCheese. To get the Extra Cheese, stake your
       ceazlinSpiritBPT vault tokens in ExtraCheese.`,
       showCheeseRate: true,
     },
@@ -197,8 +197,8 @@ export const fantomStakePools = [
       description: `This vault accepts MIM tokens and supplies them to Hundred Finance to receive hMIM
       tokens. It then stakes these hMIM tokens into Liquid Driver to earn boosted HND
       rewards. It then harvests the rewards and takes out the 1% performance fee. It then
-      sells 40% of HND to add to the MIM holdings. The remainder zaps to ceazliHND and
-      sends them to ExtraCheese. To get the Extra Cheese, stake your ceazMIM vault tokens
+      sells a percent of HND to add to the MIM holdings. The ExtraCheese Rate shows what percent is kept and
+      zapped into ceazliHND and sends them to ExtraCheese. To get the Extra Cheese, stake your ceazMIM vault tokens
       in ExtraCheese.`,
       showCheeseRate: true,
     },

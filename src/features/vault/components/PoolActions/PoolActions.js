@@ -34,7 +34,7 @@ const PoolActions = ({ pool, balanceSingle, index, sharesBalance }) => {
         ) : null}
         <DepositSection index={index} pool={pool} balanceSingle={balanceSingle} />
         <WithdrawSection index={index} pool={pool} sharesBalance={sharesBalance} />
-        <HarvestSection index={index} pool={pool} />
+        {/* <HarvestSection index={index} pool={pool} /> */}
       </Grid>
     </NetworkRequired>
   );

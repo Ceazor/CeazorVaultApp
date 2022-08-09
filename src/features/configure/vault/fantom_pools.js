@@ -173,4 +173,39 @@ export const fantomPools = [
       'https://beets.fi/#/pool/https://beets.fi/#/pool/https://beets.fi/#/pool/0xd163415bd34ef06f57c58d2aed5a5478afb464cc00000000000000000000000e',
     createdAt: 43760821,
   },
+  {
+    id: 'fantom-FRAX-hFRAX',
+    logo: 'single-assets/FRAX.png',
+    name: 'Hundred FRAX in Liquid Driver',
+    token: 'FRAX',
+    tokenDescription: 'FRAX to add to Hundred, then deposits in Liquid driver to earn boosted HND',
+    tokenAddress: '0xdc301622e621166BD8E82f2cA0A26c13Ad0BE355', //want
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'ceazFRAX',
+    earnedTokenAddress: '0xc033a514Ca3d249eE34f728f3482e3B8b54068C4', //vault
+    earnContractAddress: '0xc033a514Ca3d249eE34f728f3482e3B8b54068C4', //vault
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'tokens',
+    oracleId: '??',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'Hundred/LiquidDriver',
+    assets: ['FRAX'],
+    risks: [
+      'COMPLEXITY_LOW',
+      'BATTLE_TESTED',
+      'IL_NONE',
+      'MCAP_MEDIUM',
+      'AUDIT',
+      'CONTRACTS_VERIFIED',
+    ],
+    stratType: 'Compounder',
+    withdrawalFee: '0.01%',
+    buyTokenUrl:
+      'https://beets.fi/#/pool/https://beets.fi/#/https://swap.spiritswap.finance/#/exchange/swap/FTM/FRAX/https://beets.fi/#/pool/0xd163415bd34ef06f57c58d2aed5a5478afb464cc00000000000000000000000e',
+    createdAt: 43760821,
+  },
 ];

@@ -215,6 +215,48 @@ export const fantomStakePools = [
       },
     ],
   },
+  {
+    id: 'ceazFRAX XCheese',
+    name: 'Hundred FRAX in Liquid Driver',
+    logo: 'single-assets/ceazliHND.png',
+    token: 'ceazFRAX',
+    tokenDecimals: 18,
+    tokenAddress: '0xc033a514Ca3d249eE34f728f3482e3B8b54068C4', // ceaz staking token
+    tokenOracle: 'tokens',
+    tokenOracleId: 'ceazFRAX',
+    earnedToken: 'ceazliHND',
+    earnedTokenDecimals: 18,
+    earnedTokenAddress: '0xd5Ab59A02E8610FCb9E7c7d863A9A2951dB33148', // reward token
+    earnContractAddress: '0x6C9752fFc0c700d466391D8508167F6C1c292148', // xCheese Contract
+    earnContractAbi: govPoolABI,
+    earnedOracle: 'tokens',
+    earnedOracleId: 'ceazliHND',
+    partnership: false,
+    status: 'active',
+    fixedStatus: true,
+    strategyAddress: '0xA312F686B8C6206D9840c42042B6EA66452A783a', //
+    faq: {
+      description: `This vault accepts FRAX tokens and supplies them to Hundred Finance to receive hFRAX
+      tokens. It then stakes these hFRAX tokens into Liquid Driver to earn boosted HND
+      rewards. It then harvests the rewards and takes out the 1% performance fee. It then
+      sells a percent of HND to add to the MIM holdings. The ExtraCheese Rate shows what percent is kept and
+      zapped into ceazliHND and sends them to ExtraCheese. To get the Extra Cheese, stake your ceazMIM vault tokens
+      in ExtraCheese.`,
+      showCheeseRate: true,
+    },
+    partners: [
+      {
+        logo: 'single-assets/HND.png',
+        background: '',
+        text: 'Hundred Finance is a decentralized application (dApp) that enables the lending and borrowing of cryptocurrencies',
+        website: 'https://hundred.finance/',
+        social: {
+          DISCORD: 'https://discord.gg/phK668J6dQ',
+          twitter: 'https://twitter.com/HundredFinance',
+        },
+      },
+    ],
+  },
 
   // EVERYTHING BELOW HERE IS CLOSED
   {

@@ -257,6 +257,48 @@ export const fantomStakePools = [
       },
     ],
   },
+  {
+    id: 'ceazUSDC XCheese',
+    name: 'Hundred USDC in Liquid Driver',
+    logo: 'single-assets/ceazliHND.png',
+    token: 'ceazUSDC',
+    tokenDecimals: 18,
+    tokenAddress: '0x51d910C1446F1bdA34AE9135161B551cc8fcfeA5', // ceaz staking token
+    tokenOracle: 'tokens',
+    tokenOracleId: 'ceazUSDC',
+    earnedToken: 'ceazliHND',
+    earnedTokenDecimals: 18,
+    earnedTokenAddress: '0xd5Ab59A02E8610FCb9E7c7d863A9A2951dB33148', // reward token
+    earnContractAddress: '0x2E92d09843EA73e1E823fE39Eb38570Bf40a1EE9', // xCheese Contract
+    earnContractAbi: govPoolABI,
+    earnedOracle: 'tokens',
+    earnedOracleId: 'ceazliHND',
+    partnership: false,
+    status: 'active',
+    fixedStatus: true,
+    strategyAddress: '0x3d2918e22bdcc652266059110d3597b784ee8e39', //
+    faq: {
+      description: `This vault accepts USDC tokens and supplies them to Hundred Finance to receive hUSDC
+      tokens. It then stakes these hUSDC tokens into Liquid Driver to earn boosted HND
+      rewards. It then harvests the rewards and takes out the 1% performance fee. It then
+      sells a percent of HND to add to the MIM holdings. The ExtraCheese Rate shows what percent is kept and
+      zapped into ceazliHND and sends them to ExtraCheese. To get the Extra Cheese, stake your ceazMIM vault tokens
+      in ExtraCheese.`,
+      showCheeseRate: true,
+    },
+    partners: [
+      {
+        logo: 'single-assets/HND.png',
+        background: '',
+        text: 'Hundred Finance is a decentralized application (dApp) that enables the lending and borrowing of cryptocurrencies',
+        website: 'https://hundred.finance/',
+        social: {
+          DISCORD: 'https://discord.gg/phK668J6dQ',
+          twitter: 'https://twitter.com/HundredFinance',
+        },
+      },
+    ],
+  },
 
   // EVERYTHING BELOW HERE IS CLOSED
   {

@@ -208,4 +208,38 @@ export const fantomPools = [
       'https://beets.fi/#/pool/https://beets.fi/#/https://swap.spiritswap.finance/#/exchange/swap/FTM/FRAX/https://beets.fi/#/pool/0xd163415bd34ef06f57c58d2aed5a5478afb464cc00000000000000000000000e',
     createdAt: 43760821,
   },
+  {
+    id: 'fantom-USDC-hUSDC',
+    logo: 'single-assets/USDC.svg',
+    name: 'Hundred USDC in Liquid Driver',
+    token: 'USDC',
+    tokenDescription: 'USDC to add to Hundred, then deposits in Liquid driver to earn boosted HND',
+    tokenAddress: '0x04068DA6C83AFCFA0e13ba15A6696662335D5B75', //want
+    tokenDecimals: 6,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'ceazUSDC',
+    earnedTokenAddress: '0x51d910C1446F1bdA34AE9135161B551cc8fcfeA5', //vault
+    earnContractAddress: '0x51d910C1446F1bdA34AE9135161B551cc8fcfeA5', //vault
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'tokens',
+    oracleId: '??',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'Hundred/LiquidDriver',
+    assets: ['USDC'],
+    risks: [
+      'COMPLEXITY_LOW',
+      'BATTLE_TESTED',
+      'IL_NONE',
+      'MCAP_MEDIUM',
+      'AUDIT',
+      'CONTRACTS_VERIFIED',
+    ],
+    stratType: 'Compounder',
+    withdrawalFee: '0.01%',
+    buyTokenUrl: 'https://ftm.curve.fi/',
+    createdAt: 43760821,
+  },
 ];

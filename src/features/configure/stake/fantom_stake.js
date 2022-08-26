@@ -173,6 +173,9 @@ export const fantomStakePools = [
       },
     ],
   },
+
+  // EVERYTHING BELOW HERE IS CLOSED
+
   {
     id: 'ceazMIM XCheese',
     name: 'Hundred MIM in Liquid Driver',
@@ -190,7 +193,7 @@ export const fantomStakePools = [
     earnedOracle: 'tokens',
     earnedOracleId: 'ceazliHND',
     partnership: false,
-    status: 'active',
+    status: 'closed',
     fixedStatus: true,
     strategyAddress: '0x70378B459df98400AfB7aaFd85CD147db17556d5', //
     faq: {
@@ -232,7 +235,7 @@ export const fantomStakePools = [
     earnedOracle: 'tokens',
     earnedOracleId: 'ceazliHND',
     partnership: false,
-    status: 'active',
+    status: 'closed',
     fixedStatus: true,
     strategyAddress: '0xA312F686B8C6206D9840c42042B6EA66452A783a', //
     faq: {
@@ -274,7 +277,7 @@ export const fantomStakePools = [
     earnedOracle: 'tokens',
     earnedOracleId: 'ceazliHND',
     partnership: false,
-    status: 'active',
+    status: 'closed',
     fixedStatus: true,
     strategyAddress: '0x3d2918e22bdcc652266059110d3597b784ee8e39', //
     faq: {
@@ -300,7 +303,6 @@ export const fantomStakePools = [
     ],
   },
 
-  // EVERYTHING BELOW HERE IS CLOSED
   {
     id: 'ceazCRE8R XCheese',
     name: 'CRE8R in F-Major Compounder',

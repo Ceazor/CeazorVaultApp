@@ -108,7 +108,7 @@ export const fantomStakePools = [
     earnedOracle: 'tokens',
     earnedOracleId: 'LQDR',
     partnership: false,
-    status: 'active',
+    status: 'closed',
     fixedStatus: true,
     strategyAddress: '0xC7FEc1F4A0Ef5c3014e53b8b4926FE05B63dBE3F',
     faq: {
@@ -149,7 +149,7 @@ export const fantomStakePools = [
     earnedOracle: 'tokens',
     earnedOracleId: 'ceazFBeets',
     partnership: false,
-    status: 'active',
+    status: 'closed',
     fixedStatus: true,
     strategyAddress: '0xd814bd9B1C6E9fB00654819DE646C318FDd09ED0',
     faq: {

@@ -91,6 +91,9 @@ export const fantomStakePools = [
       },
     ],
   },
+
+  // EVERYTHING BELOW HERE IS CLOSED
+
   {
     id: 'ceazliHND LQDR XCheese',
     name: 'Valhalla Calling By LiquidDriver',
@@ -173,8 +176,6 @@ export const fantomStakePools = [
       },
     ],
   },
-
-  // EVERYTHING BELOW HERE IS CLOSED
 
   {
     id: 'ceazMIM XCheese',

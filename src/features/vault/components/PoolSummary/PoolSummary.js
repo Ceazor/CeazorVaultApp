@@ -10,7 +10,7 @@ import styles from './styles';
 import PoolPaused from './PoolPaused/PoolPaused';
 import PoolTitle from './PoolTitle/PoolTitle';
 import LabeledStat from './LabeledStat/LabeledStat';
-import ApyStats from './ApyStats/ApyStats';
+// import ApyStats from './ApyStats/ApyStats';
 import { usePoolApr } from '../../../stake/redux/subscription';
 import { PoolBoosts } from './PoolBoosts/PoolBoosts';
 import { getRetireReason } from './RetireReason/RetireReason';
@@ -33,7 +33,7 @@ const PoolSummary = ({
   const { t } = useTranslation();
   const classes = useStyles();
 
-  const launchpoolApr = usePoolApr(launchpool ? launchpool.id : null);
+  // const launchpoolApr = usePoolApr(launchpool ? launchpool.id : null);
   const vaultStateTitle = useMemo(() => {
     let state =
       pool.status === 'eol'
@@ -69,8 +69,8 @@ const PoolSummary = ({
     sharesBalance.multipliedBy(new BigNumber(pool.pricePerFullShare)),
     pool.tokenDecimals
   );
-  const depositedUsd =
-    deposited > 0 && fetchVaultsDataDone ? formatTvl(deposited, pool.oraclePrice) : '';
+  // const depositedUsd =
+  //   deposited > 0 && fetchVaultsDataDone ? formatTvl(deposited, pool.oraclePrice) : '';
   const onSummaryClick = useCallback(
     e => {
       if (!e.target || !e.target.classList.contains('tooltip-toggle')) {
@@ -122,19 +122,19 @@ const PoolSummary = ({
         <Grid item xs={6} className={`${classes.item} ${classes.itemBalances}`}>
           <LabeledStat
             value={formatDecimals(deposited)}
-            subvalue={depositedUsd}
+            // subvalue={depositedUsd}
             label={t('Vault-Deposited')}
             isLoading={!fetchBalancesDone}
             className={classes.itemInner}
           />
         </Grid>
-        <ApyStats
+        {/* <ApyStats
           apy={apy}
           launchpoolApr={launchpoolApr}
           isLoading={!fetchApysDone}
           itemClasses={`${classes.item} ${classes.itemStats}`}
           itemInnerClasses={classes.itemInner}
-        />
+        /> */}
         <Grid item xs={4} className={`${classes.item} ${classes.itemStats}`}>
           <LabeledStat
             value={formatTvl(pool.tvl, pool.oraclePrice)}

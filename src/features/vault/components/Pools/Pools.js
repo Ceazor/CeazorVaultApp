@@ -4,14 +4,14 @@ import { makeStyles } from '@material-ui/core/styles';
 import AllInclusiveIcon from '@material-ui/icons/AllInclusive';
 import Grid from '@material-ui/core/Grid';
 
-import TVLLoader from './TVLLoader/TVLLoader';
+// import TVLLoader from './TVLLoader/TVLLoader';
 import NetworksToggle from 'components/NetworksToggle/NetworksToggle';
 import { useConnectWallet } from 'features/home/redux/hooks';
 import { useFetchBalances, useFetchVaultsData, useFetchApys } from '../../redux/hooks';
 import VisiblePools from '../VisiblePools/VisiblePools';
 import styles from './styles';
 import { usePoolsTvl, useUserTvl } from '../../hooks/usePoolsTvl';
-import { formatGlobalTvl } from 'features/helpers/format';
+// import { formatGlobalTvl } from 'features/helpers/format';
 
 const FETCH_INTERVAL_MS = 15 * 1000;
 
@@ -24,8 +24,8 @@ export default function Pools() {
     useFetchVaultsData();
   const { tokens, fetchBalances, fetchBalancesPending, fetchBalancesDone } = useFetchBalances();
   const { apys, fetchApys, fetchApysDone } = useFetchApys();
-  const { poolsTvl } = usePoolsTvl(pools);
-  const { userTvl } = useUserTvl(pools, tokens);
+  // const { poolsTvl } = usePoolsTvl(pools);
+  // const { userTvl } = useUserTvl(pools, tokens);
   const classes = useStyles();
 
   useEffect(() => {
@@ -67,7 +67,7 @@ export default function Pools() {
       </Grid>
       <Grid item xs={6}>
         <div className={classes.tvl}>
-          <span className={classes.title}>
+          {/* <span className={classes.title}>
             TVL{' '}
             {fetchVaultsDataDone && poolsTvl > 0 ? (
               formatGlobalTvl(poolsTvl)
@@ -83,7 +83,7 @@ export default function Pools() {
             ) : (
               <TVLLoader className={classes.titleLoader} />
             )}
-          </span>
+          </span> */}
 
           <h3 className={classes.subtitle} style={{ marginTop: '16px' }}>
             <AllInclusiveIcon className={classes.infinityIcon} />

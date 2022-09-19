@@ -15,6 +15,7 @@ import { usePoolApr } from '../../../stake/redux/subscription';
 import { PoolBoosts } from './PoolBoosts/PoolBoosts';
 import { getRetireReason } from './RetireReason/RetireReason';
 import { getPoolWarning } from './PoolWarning/PoolWarning';
+import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles(styles);
 
@@ -100,7 +101,6 @@ const PoolSummary = ({
             name={pool.name}
             logo={pool.logo}
             poolId={pool.id}
-            description={t('Vault-Description', { vault: pool.tokenDescription })}
             launchpool={launchpool}
             addLiquidityUrl={pool.addLiquidityUrl}
             removeLiquidityUrl={pool.removeLiquidityUrl}
@@ -127,6 +127,11 @@ const PoolSummary = ({
             isLoading={!fetchBalancesDone}
             className={classes.itemInner}
           />
+        </Grid>
+        <Grid item xs={120} className={`${classes.item} ${classes.itemTitle}`}>
+          <Typography className={classes.subtitle} variant="body2">
+            {t('Vault-Description', { vault: pool.tokenDescription })}
+          </Typography>
         </Grid>
         {/* <ApyStats
           apy={apy}

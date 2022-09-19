@@ -65,17 +65,28 @@ export const networkSettings = {
   //   rpcUrls: ['https://api.s0.t.hmny.io/'],
   //   blockExplorerUrls: ['https://explorer.harmony.one/'],
   // },
-  // 42161: {
-  //   chainId: `0x${parseInt(42161, 10).toString(16)}`,
-  //   chainName: 'Arbitrum One',
-  //   nativeCurrency: {
-  //     name: 'ETH',
-  //     symbol: 'ETH',
-  //     decimals: 18,
-  //   },
-  //   rpcUrls: ['https://arb1.arbitrum.io/rpc'],
-  //   blockExplorerUrls: ['https://arbiscan.io/'],
-  // },
+  42161: {
+    chainId: `0x${parseInt(42161, 10).toString(16)}`,
+    chainName: 'Arbitrum One',
+    nativeCurrency: {
+      name: 'ETH',
+      symbol: 'ETH',
+      decimals: 18,
+    },
+    rpcUrls: ['https://arb1.arbitrum.io/rpc'],
+    blockExplorerUrls: ['https://arbiscan.io/'],
+  },
+  10: {
+    chainId: `0x${parseInt(10, 10).toString(16)}`,
+    chainName: 'Optimistic Ethereum',
+    nativeCurrency: {
+      name: 'ETH',
+      symbol: 'ETH',
+      decimals: 18,
+    },
+    rpcUrls: ['https://mainnet.optimism.io'],
+    blockExplorerUrls: ['https://optimistic.etherscan.io'],
+  },
   // 42220: {
   //   chainId: `0x${parseInt(42220, 10).toString(16)}`,
   //   chainName: 'Celo',

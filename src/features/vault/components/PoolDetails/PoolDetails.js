@@ -23,11 +23,12 @@ import { launchpools } from '../../../helpers/getNetworkData';
 import {
   useLaunchpoolSubscriptions,
   useLaunchpoolUpdates,
-  usePoolApr,
+  // usePoolApr,
 } from '../../../stake/redux/hooks';
 import { PoolBoosts } from '../PoolSummary/PoolBoosts/PoolBoosts';
 import { getRetireReason } from '../PoolSummary/RetireReason/RetireReason';
 import { getPoolWarning } from '../PoolSummary/PoolWarning/PoolWarning';
+import Typography from '@material-ui/core/Typography';
 
 const FETCH_INTERVAL_MS = 30 * 1000;
 
@@ -191,6 +192,11 @@ const PoolDetails = ({ vaultId }) => {
               isLoading={!fetchBalancesDone}
               className={classes.itemInner}
             />
+          </Grid>
+          <Grid item xs={120} className={''}>
+            <Typography className={classes.subtitle} variant="body2">
+              {t('Vault-Description', { vault: pool.tokenDescription })}
+            </Typography>
           </Grid>
           {/* <ApyStats
             apy={apy}

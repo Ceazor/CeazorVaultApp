@@ -25,9 +25,9 @@ const PoolSummary = ({
   toggleCard,
   balanceSingle,
   sharesBalance,
-  apy,
+  // apy,
   fetchBalancesDone,
-  fetchApysDone,
+  // fetchApysDone,
   fetchVaultsDataDone,
   multipleLaunchpools = false,
 }) => {

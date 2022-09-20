@@ -4,7 +4,8 @@ export const fantomPools = [
     logo: 'single-assets/fBEETS.png',
     name: 'FBEETS Compounder',
     token: 'FBEETS',
-    tokenDescription: 'fBEETS voting power to vote on CRE8R:FTM Beethoven-X gauge.',
+    tokenDescription:
+      'Beethoven-x to earn additional Beets. The fBEETS voting power is used to vote on the CRE8R:FTM Beethoven-X gauge.',
     tokenAddress: '0xfcef8a994209d6916eb2c86cdd2afd60aa6f54b1', //want token
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
@@ -38,7 +39,8 @@ export const fantomPools = [
     logo: 'fantom/Cre8rBPT.png',
     name: 'CRE8R in F-Major Compounder',
     token: 'CRE8RBPT',
-    tokenDescription: 'Beethoven to earn Beets, converts to ceazFBeets for xCheese',
+    tokenDescription:
+      'Beethoven to earn Beets and CRE8R. CRE8R are compounded into the CRE8RBPT, and the BEETS are converted to ceazFBeets for xCheese',
     tokenAddress: '0xbb4607beDE4610e80d35C15692eFcB7807A2d0A6', //want
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
@@ -73,7 +75,8 @@ export const fantomPools = [
     logo: 'single-assets/MIM.png',
     name: 'Hundred MIM in Liquid Driver',
     token: 'hMIM',
-    tokenDescription: 'hMIM from Hundred is deposited in Liquid driver to earn boosted HND',
+    tokenDescription:
+      'hMIM from Hundred to earn boosted HND on Liquid Drive, which are sold and used to compound more hMIM.',
     tokenAddress: '0xa8cD5D59827514BCF343EC19F531ce1788Ea48f8', //want
     tokenDecimals: 8,
     tokenDescriptionUrl: '#',

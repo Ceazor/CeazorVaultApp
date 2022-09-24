@@ -3,13 +3,12 @@ import { useTranslation } from 'react-i18next';
 import { makeStyles } from '@material-ui/core/styles';
 import AllInclusiveIcon from '@material-ui/icons/AllInclusive';
 import Grid from '@material-ui/core/Grid';
-
-// import TVLLoader from './TVLLoader/TVLLoader';
 import NetworksToggle from 'components/NetworksToggle/NetworksToggle';
 import { useConnectWallet } from 'features/home/redux/hooks';
 import { useFetchBalances, useFetchVaultsData, useFetchApys } from '../../redux/hooks';
 import VisiblePools from '../VisiblePools/VisiblePools';
 import styles from './styles';
+// import TVLLoader from './TVLLoader/TVLLoader';
 // import { usePoolsTvl, useUserTvl } from '../../hooks/usePoolsTvl';
 // import { formatGlobalTvl } from 'features/helpers/format';
 

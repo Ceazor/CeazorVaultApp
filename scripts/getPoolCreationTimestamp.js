@@ -6,7 +6,7 @@ const explorerApiUrls = {
   polygon: 'https://api.polygonscan.com/api',
   fantom: 'https://api.ftmscan.com/api',
   arbitrum: 'https://api.arbiscan.io/api',
-  optimism: 'https://api.etherscan.com/api',
+  optimism: 'https://api-optimistic.etherscan.io/api',
 };
 
 const blockScoutChainsTimeout = new Set(['fuse', 'metis', 'celo', 'emerald']);

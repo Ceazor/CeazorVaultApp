@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Accordion, AccordionDetails, makeStyles, Typography } from '@material-ui/core';
-import styles from './styles/list';
+import { Accordion, AccordionDetails, Typography } from '@material-ui/core';
+// import styles from './styles/list';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Web3 from 'web3';

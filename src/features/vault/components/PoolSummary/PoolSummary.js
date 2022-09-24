@@ -11,7 +11,7 @@ import PoolPaused from './PoolPaused/PoolPaused';
 import PoolTitle from './PoolTitle/PoolTitle';
 import LabeledStat from './LabeledStat/LabeledStat';
 // import ApyStats from './ApyStats/ApyStats';
-import { usePoolApr } from '../../../stake/redux/subscription';
+// import { usePoolApr } from '../../../stake/redux/subscription';
 import { PoolBoosts } from './PoolBoosts/PoolBoosts';
 import { getRetireReason } from './RetireReason/RetireReason';
 import { getPoolWarning } from './PoolWarning/PoolWarning';

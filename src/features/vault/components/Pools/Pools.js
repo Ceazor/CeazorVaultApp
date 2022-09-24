@@ -10,7 +10,7 @@ import { useConnectWallet } from 'features/home/redux/hooks';
 import { useFetchBalances, useFetchVaultsData, useFetchApys } from '../../redux/hooks';
 import VisiblePools from '../VisiblePools/VisiblePools';
 import styles from './styles';
-import { usePoolsTvl, useUserTvl } from '../../hooks/usePoolsTvl';
+// import { usePoolsTvl, useUserTvl } from '../../hooks/usePoolsTvl';
 // import { formatGlobalTvl } from 'features/helpers/format';
 
 const FETCH_INTERVAL_MS = 15 * 1000;

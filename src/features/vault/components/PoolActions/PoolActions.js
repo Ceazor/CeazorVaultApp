@@ -2,7 +2,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import DepositSection from '../PoolDetails/DepositSection/DepositSection';
 import WithdrawSection from '../PoolDetails/WithdrawSection/WithdrawSection';
-import HarvestSection from '../PoolDetails/HarvestSection/HarvestSection';
+// import HarvestSection from '../PoolDetails/HarvestSection/HarvestSection';
 import { NetworkRequired } from '../../../../components/NetworkRequired/NetworkRequired';
 import { makeStyles } from '@material-ui/core/styles';
 

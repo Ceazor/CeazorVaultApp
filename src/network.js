@@ -18,12 +18,12 @@ export const allNetworks = [
     id: 42161,
     hash: '/arbitrum',
   },
-  // {
-  //   name: 'OPTIMISM',
-  //   asset: 'OPTIMISM',
-  //   id: 10,
-  //   hash: '/optimism',
-  // },
+  {
+    name: 'OPTIMISM',
+    asset: 'OPTIMISM',
+    id: 10,
+    hash: '/optimism',
+  },
 ];
 
 const network = allNetworks.find(n => window.location.hash.startsWith('#' + n.hash));

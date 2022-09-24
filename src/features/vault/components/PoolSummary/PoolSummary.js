@@ -113,7 +113,7 @@ const PoolSummary = ({
         <Grid item xs={6} className={`${classes.item} ${classes.itemBalances}`}>
           <LabeledStat
             value={formatDecimals(balanceSingle)}
-            subvalue={balanceUsd}
+            // subvalue={balanceUsd}
             label={t('Vault-Wallet')}
             isLoading={!fetchBalancesDone}
             className={classes.itemInner}

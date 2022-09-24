@@ -622,6 +622,18 @@ export const getNetworkConnectors = t => {
           },
         },
       };
+    case 10:
+      return {
+        network: 'optimism',
+        cacheProvider: true,
+        providerOptions: {
+          injected: {
+            display: {
+              name: 'MetaMask',
+            },
+          },
+        },
+      };
     case 250:
       return {
         network: 'fantom',

@@ -19,6 +19,8 @@ import {
   arbitrumStakePools,
   arbitrumAddressBook,
   arbitrumZaps,
+  optimismPools,
+  optimismAddressBook,
 } from '../configure';
 
 export const appNetworkId = window.REACT_APP_NETWORK_ID;
@@ -27,12 +29,14 @@ const networkTxUrls = {
   137: hash => `https://polygonscan.com/tx/${hash}`,
   250: hash => `https://ftmscan.com/tx/${hash}`,
   42161: hash => `https://arbiscan.io/tx/${hash}`,
+  10: hash => `https://optimistic.etherscan.io/${hash}`,
 };
 
 const networkFriendlyName = {
   137: 'Polygon',
   250: 'Fantom',
   42161: 'Arbitrum',
+  10: 'Optimism',
 };
 
 const networkBuyUrls = {
@@ -40,6 +44,7 @@ const networkBuyUrls = {
   250: 'https://spooky.fi/#/swap?inputCurrency=0x04068da6c83afcfa0e13ba15a6696662335d5b75&outputCurrency=0xd6070ae98b8069de6B494332d1A1a81B6179D960',
   42161:
     'https://app.sushi.com/swap?inputCurrency=0x82af49447d8a07e3bd95bd0d56f35241523fbab1&outputCurrency=0x99c409e5f62e4bd2ac142f17cafb6810b8f0baae',
+  10: 'https://op.beets.fi/swap',
 };
 
 export const getNetworkCoin = () => {
@@ -54,6 +59,8 @@ export const getNetworkPools = () => {
       return fantomPools;
     case 42161:
       return arbitrumPools;
+    case 10:
+      return optimismPools;
     default:
       return [];
   }
@@ -67,6 +74,8 @@ export const getNetworkVaults = (networkId = appNetworkId) => {
       return indexBy(fantomPools, 'id');
     case 42161:
       return indexBy(arbitrumPools, 'id');
+    case 10:
+      return indexBy(optimismPools, 'id');
     default:
       return {};
   }
@@ -80,7 +89,8 @@ export const getNetworkLaunchpools = (networkId = appNetworkId) => {
       return indexBy(fantomStakePools, 'id');
     case 42161:
       return indexBy(arbitrumStakePools, 'id');
-    case 42220:
+    // case 10:
+    //   return indexBy(optimismStakePools, 'id');
     default:
       return {};
   }
@@ -93,6 +103,8 @@ export const getNetworkTokens = () => {
       return polygonAddressBook.tokens;
     case 250:
       return fantomAddressBook.tokens;
+    case 10:
+      return optimismAddressBook.tokens;
     case 42161:
       return arbitrumAddressBook.tokens;
     default:
@@ -177,8 +189,8 @@ export const getNetworkStables = () => {
         'USDO',
         'USDD',
       ];
-    case 128:
-      return ['USDT', 'HUSD'];
+    case 10:
+      return ['USDT', 'DAI', 'USDC'];
     case 43114:
       return [
         'USDT',

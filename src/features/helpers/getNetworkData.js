@@ -20,6 +20,7 @@ import {
   arbitrumAddressBook,
   arbitrumZaps,
   optimismPools,
+  optimismStakePools,
   optimismAddressBook,
 } from '../configure';
 
@@ -89,8 +90,8 @@ export const getNetworkLaunchpools = (networkId = appNetworkId) => {
       return indexBy(fantomStakePools, 'id');
     case 42161:
       return indexBy(arbitrumStakePools, 'id');
-    // case 10:
-    //   return indexBy(optimismStakePools, 'id');
+    case 10:
+      return indexBy(optimismStakePools, 'id');
     default:
       return {};
   }

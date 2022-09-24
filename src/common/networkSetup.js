@@ -1,4 +1,49 @@
 export const networkSettings = {
+  250: {
+    chainId: `0x${parseInt(250, 10).toString(16)}`,
+    chainName: 'Fantom Opera',
+    nativeCurrency: {
+      name: 'FTM',
+      symbol: 'FTM',
+      decimals: 18,
+    },
+    rpcUrls: ['https://rpc.ftm.tools'],
+    blockExplorerUrls: ['https://ftmscan.com/'],
+  },
+  42161: {
+    chainId: `0x${parseInt(42161, 10).toString(16)}`,
+    chainName: 'Arbitrum One',
+    nativeCurrency: {
+      name: 'ETH',
+      symbol: 'ETH',
+      decimals: 18,
+    },
+    rpcUrls: ['https://arb1.arbitrum.io/rpc'],
+    blockExplorerUrls: ['https://arbiscan.io/'],
+  },
+  10: {
+    chainId: `0x${parseInt(10, 10).toString(16)}`,
+    chainName: 'Optimistic Ethereum',
+    nativeCurrency: {
+      name: 'ETH',
+      symbol: 'ETH',
+      decimals: 18,
+    },
+    rpcUrls: ['https://mainnet.optimism.io'],
+    blockExplorerUrls: ['https://optimistic.etherscan.io'],
+  },
+  137: {
+    chainId: `0x${parseInt(137, 10).toString(16)}`,
+    chainName: 'Polygon Mainnet',
+    nativeCurrency: {
+      name: 'MATIC',
+      symbol: 'MATIC',
+      decimals: 18,
+    },
+    rpcUrls: ['https://polygon-rpc.com'],
+    blockExplorerUrls: ['https://polygonscan.com/'],
+  },
+
   // 56: {
   //   chainId: `0x${parseInt(56, 10).toString(16)}`,
   //   chainName: 'BSC Mainnet',
@@ -32,28 +77,7 @@ export const networkSettings = {
   //   rpcUrls: ['https://api.avax.network/ext/bc/C/rpc'],
   //   blockExplorerUrls: ['https://snowtrace.io/'],
   // },
-  // 137: {
-  //   chainId: `0x${parseInt(137, 10).toString(16)}`,
-  //   chainName: 'Polygon Mainnet',
-  //   nativeCurrency: {
-  //     name: 'MATIC',
-  //     symbol: 'MATIC',
-  //     decimals: 18,
-  //   },
-  //   rpcUrls: ['https://polygon-rpc.com'],
-  //   blockExplorerUrls: ['https://polygonscan.com/'],
-  // },
-  250: {
-    chainId: `0x${parseInt(250, 10).toString(16)}`,
-    chainName: 'Fantom Opera',
-    nativeCurrency: {
-      name: 'FTM',
-      symbol: 'FTM',
-      decimals: 18,
-    },
-    rpcUrls: ['https://rpc.ftm.tools'],
-    blockExplorerUrls: ['https://ftmscan.com/'],
-  },
+
   // 1666600000: {
   //   chainId: `0x${parseInt(1666600000, 10).toString(16)}`,
   //   chainName: 'Harmony One',
@@ -65,28 +89,7 @@ export const networkSettings = {
   //   rpcUrls: ['https://api.s0.t.hmny.io/'],
   //   blockExplorerUrls: ['https://explorer.harmony.one/'],
   // },
-  42161: {
-    chainId: `0x${parseInt(42161, 10).toString(16)}`,
-    chainName: 'Arbitrum One',
-    nativeCurrency: {
-      name: 'ETH',
-      symbol: 'ETH',
-      decimals: 18,
-    },
-    rpcUrls: ['https://arb1.arbitrum.io/rpc'],
-    blockExplorerUrls: ['https://arbiscan.io/'],
-  },
-  10: {
-    chainId: `0x${parseInt(10, 10).toString(16)}`,
-    chainName: 'Optimistic Ethereum',
-    nativeCurrency: {
-      name: 'ETH',
-      symbol: 'ETH',
-      decimals: 18,
-    },
-    rpcUrls: ['https://mainnet.optimism.io'],
-    blockExplorerUrls: ['https://optimistic.etherscan.io'],
-  },
+
   // 42220: {
   //   chainId: `0x${parseInt(42220, 10).toString(16)}`,
   //   chainName: 'Celo',

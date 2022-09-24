@@ -23,7 +23,7 @@ export const networkSettings = {
   },
   10: {
     chainId: `0x${parseInt(10, 10).toString(16)}`,
-    chainName: 'Optimistic Ethereum',
+    chainName: 'Optimism',
     nativeCurrency: {
       name: 'ETH',
       symbol: 'ETH',

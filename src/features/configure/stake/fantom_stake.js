@@ -66,7 +66,7 @@ export const fantomStakePools = [
     earnedOracle: 'tokens',
     earnedOracleId: 'BEETS',
     partnership: false,
-    status: 'active',
+    status: 'closed',
     fixedStatus: true,
     strategyAddress: '0xD46F01C721c2F8B73d7D87ab48E26A2fEA52eA39',
     faq: {

@@ -8,7 +8,7 @@ import BigNumber from 'bignumber.js';
 import { useConnectWallet } from '../../../home/redux/hooks';
 import { useFetchBalances, useFetchVaultsData } from '../../redux/hooks';
 import { byDecimals } from 'features/helpers/bignumber';
-import { formatTvl } from 'features/helpers/format';
+// import { formatTvl } from 'features/helpers/format';
 import HomeLink from './HomeLink/HomeLink';
 import PoolActions from '../PoolActions/PoolActions';
 import PoolTitle from '../PoolSummary/PoolTitle/PoolTitle';
@@ -42,7 +42,7 @@ const PoolDetails = ({ vaultId }) => {
   const classes = useStyles();
   const { t } = useTranslation();
   const { web3, address } = useConnectWallet();
-  const { pools, fetchVaultsData, fetchVaultsDataDone } = useFetchVaultsData();
+  const { pools, fetchVaultsData } = useFetchVaultsData();
   const { tokens, fetchBalances, fetchBalancesDone } = useFetchBalances();
   // const { apys, fetchApys, fetchApysDone } = useFetchApys();
   const pool = pools.find(p => p.id === vaultId);

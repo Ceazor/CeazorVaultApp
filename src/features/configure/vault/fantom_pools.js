@@ -70,42 +70,42 @@ export const fantomPools = [
       'https://beets.fi/#/pool/0xbb4607bede4610e80d35c15692efcb7807a2d0a6000200000000000000000140',
     createdAt: 1622574935,
   },
-  {
-    id: 'fantom-hMIM',
-    logo: 'single-assets/MIM.png',
-    name: 'Hundred MIM in Liquid Driver',
-    token: 'hMIM',
-    tokenDescription:
-      'hMIM from Hundred to earn boosted HND on Liquid Drive, which are sold and used to compound more hMIM.',
-    tokenAddress: '0xa8cD5D59827514BCF343EC19F531ce1788Ea48f8', //want
-    tokenDecimals: 8,
-    tokenDescriptionUrl: '#',
-    earnedToken: 'ceazhMIM',
-    earnedTokenAddress: '0xc28F6A40Be1D0209cC3feC2e9B61A4470762c34E', //vault
-    earnContractAddress: '0xc28F6A40Be1D0209cC3feC2e9B61A4470762c34E', //vault
-    pricePerFullShare: 1,
-    tvl: 0,
-    oracle: 'tokens',
-    oracleId: '??',
-    oraclePrice: 0,
-    depositsPaused: false,
-    status: 'active',
-    platform: 'Hundred/LiquidDriver',
-    assets: ['hMIM'],
-    risks: [
-      'COMPLEXITY_LOW',
-      'BATTLE_TESTED',
-      'IL_NONE',
-      'MCAP_MEDIUM',
-      'AUDIT',
-      'CONTRACTS_VERIFIED',
-    ],
-    stratType: 'Compounder',
-    withdrawalFee: '0.00%',
-    buyTokenUrl:
-      'https://beets.fi/#/pool/https://beets.fi/#/pool/https://beets.fi/#/pool/0xd163415bd34ef06f57c58d2aed5a5478afb464cc00000000000000000000000e',
-    createdAt: 43760821,
-  },
+  // {
+  //   id: 'fantom-hMIM',
+  //   logo: 'single-assets/MIM.png',
+  //   name: 'Hundred MIM in Liquid Driver',
+  //   token: 'hMIM',
+  //   tokenDescription:
+  //     'hMIM from Hundred to earn boosted HND on Liquid Drive, which are sold and used to compound more hMIM.',
+  //   tokenAddress: '0xa8cD5D59827514BCF343EC19F531ce1788Ea48f8', //want
+  //   tokenDecimals: 8,
+  //   tokenDescriptionUrl: '#',
+  //   earnedToken: 'ceazhMIM',
+  //   earnedTokenAddress: '0xc28F6A40Be1D0209cC3feC2e9B61A4470762c34E', //vault
+  //   earnContractAddress: '0xc28F6A40Be1D0209cC3feC2e9B61A4470762c34E', //vault
+  //   pricePerFullShare: 1,
+  //   tvl: 0,
+  //   oracle: 'tokens',
+  //   oracleId: '??',
+  //   oraclePrice: 0,
+  //   depositsPaused: false,
+  //   status: 'active',
+  //   platform: 'Hundred/LiquidDriver',
+  //   assets: ['hMIM'],
+  //   risks: [
+  //     'COMPLEXITY_LOW',
+  //     'BATTLE_TESTED',
+  //     'IL_NONE',
+  //     'MCAP_MEDIUM',
+  //     'AUDIT',
+  //     'CONTRACTS_VERIFIED',
+  //   ],
+  //   stratType: 'Compounder',
+  //   withdrawalFee: '0.00%',
+  //   buyTokenUrl:
+  //     'https://beets.fi/#/pool/https://beets.fi/#/pool/https://beets.fi/#/pool/0xd163415bd34ef06f57c58d2aed5a5478afb464cc00000000000000000000000e',
+  //   createdAt: 43760821,
+  // },
   // {
   //   id: 'fantom-linSpiritBPT',
   //   logo: 'fantom/linSpiritBPT.png',

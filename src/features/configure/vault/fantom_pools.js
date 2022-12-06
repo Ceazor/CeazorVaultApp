@@ -5,7 +5,7 @@ export const fantomPools = [
     name: 'FBEETS Compounder',
     token: 'FBEETS',
     tokenDescription:
-      'Beethoven-x to earn additional Beets. The fBEETS voting power is used to vote on the CRE8R:FTM Beethoven-X gauge.',
+      'Beethoven-x to compound Beets. The fBEETS voting power is used to vote on the CRE8R:FTM & CRE8R:bbUSD Beethoven-X gauges.',
     tokenAddress: '0xfcef8a994209d6916eb2c86cdd2afd60aa6f54b1', //want token
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
@@ -104,7 +104,7 @@ export const fantomPools = [
     withdrawalFee: '0.01%',
     buyTokenUrl:
       'https://beets.fi/#/pool/0xbb4607bede4610e80d35c15692efcb7807a2d0a6000200000000000000000140',
-    createdAt: 1622574935,
+    createdAt: 1722574935,
   },
   // {
   //   id: 'fantom-hMIM',

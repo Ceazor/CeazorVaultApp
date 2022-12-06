@@ -74,7 +74,7 @@ export const fantomPools = [
     id: 'fantom-CRE8RbbUSDBPT',
     logo: 'fantom/Cre8rBPT.png',
     name: 'CRE8R in bbMinor Compounder',
-    token: 'CRE8RBPT',
+    token: 'CRE8RbbUSDBPT',
     tokenDescription:
       'Beethoven to earn Beets and CRE8R. CRE8R are compounded into the CRE8RbbUSDBPT, and the BEETS are converted to ceazFBeets for xCheese',
     tokenAddress: '0x8c63702D4D4A521A6a8ECEc8AB8F7CE9d1D6299e', //want

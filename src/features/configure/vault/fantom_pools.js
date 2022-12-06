@@ -37,7 +37,7 @@ export const fantomPools = [
   {
     id: 'fantom-CRE8RBPT',
     logo: 'fantom/Cre8rBPT.png',
-    name: 'CRE8R in F-Major Compounder',
+    name: 'CRE8R in F-Major',
     token: 'CRE8RBPT',
     tokenDescription:
       'Beethoven to earn Beets and CRE8R. CRE8R are compounded into the CRE8RBPT, and the BEETS are converted to ceazFBeets for xCheese',
@@ -73,14 +73,14 @@ export const fantomPools = [
   {
     id: 'fantom-CRE8RbbUSDBPT',
     logo: 'fantom/Cre8rBPT.png',
-    name: 'CRE8R in bbMinor Compounder',
+    name: 'CRE8R in bbMinor',
     token: 'CRE8RbbUSDBPT',
     tokenDescription:
       'Beethoven to earn Beets and CRE8R. CRE8R are compounded into the CRE8RbbUSDBPT, and the BEETS are converted to ceazFBeets for xCheese',
     tokenAddress: '0x8c63702D4D4A521A6a8ECEc8AB8F7CE9d1D6299e', //want
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
-    earnedToken: 'ceazCRE8RBPT',
+    earnedToken: 'ceazCRE8RbbUSD',
     earnedTokenAddress: '0xdb2DE1a460e46117D2544C46E3819D56e4D98F91', //vault
     earnContractAddress: '0xdb2DE1a460e46117D2544C46E3819D56e4D98F91', //vault
     pricePerFullShare: 1,

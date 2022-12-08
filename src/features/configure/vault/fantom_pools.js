@@ -72,7 +72,7 @@ export const fantomPools = [
   },
   {
     id: 'fantom-CRE8RbbUSDBPT',
-    logo: 'fantom/Cre8rBPT.png',
+    logo: 'fantom/CRE8RbbUSD.png',
     name: 'CRE8R in bbMinor',
     token: 'CRE8RbbUSDBPT',
     tokenDescription:

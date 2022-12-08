@@ -24,7 +24,7 @@ export const fantomStakePools = [
     earnedOracle: 'tokens',
     earnedOracleId: 'CRE8R',
     partnership: false,
-    status: 'active',
+    status: 'closed',
     fixedStatus: true,
     strategyAddress: '0x38a206688332674be5ed20b5a65282224b43c189',
     faq: {

@@ -1,25 +1,25 @@
 export const optimismPools = [
   {
-    id: 'IBBPT',
-    logo: 'single-assets/ibBPT.png',
-    name: 'Puff the Magic Dragon Compounder',
-    token: 'IBBPT',
-    tokenDescription: 'Beethoven-x to earn additional IB. Compound the IB into the BPT.',
-    tokenAddress: '0xeFb0D9F51EFd52d7589A9083A6d0CA4de416c249', //want token
+    id: 'BPT-rETH-ETH',
+    logo: 'OP-pair/BPTrETH.png',
+    name: 'Rocket Fuel Autocompounder',
+    token: 'BPT-rETH-ETH',
+    tokenDescription: 'Beethoven-x to earn OP and BAL then compounds to more BPTs.',
+    tokenAddress: '0x4fd63966879300cafafbb35d157dc5229278ed23', //want token
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
-    earnedToken: 'ceazFBEETS',
-    earnedTokenAddress: '0x0eb5103afA769E838743E8F0CaF98cCd6065bD08', // vault token
-    earnContractAddress: '0x0eb5103afA769E838743E8F0CaF98cCd6065bD08', // vault token
+    earnedToken: 'ceazrETHBPT',
+    earnedTokenAddress: '0x068D9D09DDC1Cf2b66A4C32eD74fFE68Db0b5f1B', // vault token
+    earnContractAddress: '0x068D9D09DDC1Cf2b66A4C32eD74fFE68Db0b5f1B', // vault token
     pricePerFullShare: 1,
     tvl: 0,
     oracle: 'tokens',
-    oracleId: 'IBBPT',
+    oracleId: 'BPT-rETH',
     oraclePrice: 0,
     depositsPaused: false,
     status: 'active',
     platform: 'Beethoven-X',
-    assets: ['IBBPT'],
+    assets: ['BPT-rETH-ETH'],
     risks: [
       'COMPLEXITY_LOW',
       'BATTLE_TESTED',
@@ -31,7 +31,7 @@ export const optimismPools = [
     stratType: 'Compounder',
     withdrawalFee: '0.01%',
     buyTokenUrl:
-      'https://op.beets.fi/pool/0xefb0d9f51efd52d7589a9083a6d0ca4de416c24900020000000000000000002c',
+      'https://op.beets.fi/pool/0x4fd63966879300cafafbb35d157dc5229278ed2300020000000000000000002b',
     createdAt: 1622574935,
   },
 ];

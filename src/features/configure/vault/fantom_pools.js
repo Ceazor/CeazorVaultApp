@@ -36,7 +36,7 @@ export const fantomPools = [
   },
   {
     id: 'fantom-CRE8RBPT',
-    logo: 'fantom/Cre8rBPT.png',
+    logo: 'fantom/CRE8RalCoda.png',
     name: 'CRE8R in F-Major',
     token: 'CRE8RBPT',
     tokenDescription:
@@ -71,18 +71,18 @@ export const fantomPools = [
     createdAt: 1622574935,
   },
   {
-    id: 'fantom-CRE8RbbUSDBPT',
+    id: 'fantom-CRE8RalCoda',
     logo: 'fantom/CRE8RbbUSD.png',
-    name: 'CRE8R in bbMinor',
-    token: 'CRE8RbbUSDBPT',
+    name: 'CRE8R al Coda',
+    token: 'BPT-CRE8R-C',
     tokenDescription:
-      'Beethoven to earn Beets and CRE8R. CRE8R are compounded into the CRE8RbbUSDBPT, and the BEETS are converted to ceazFBeets for xCheese',
+      'Beethoven to earn Beets which are converted to ceazfBEETS and compounded',
     tokenAddress: '0x8c63702D4D4A521A6a8ECEc8AB8F7CE9d1D6299e', //want
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
-    earnedToken: 'ceazCRE8RbbUSD',
-    earnedTokenAddress: '0xdb2DE1a460e46117D2544C46E3819D56e4D98F91', //vault
-    earnContractAddress: '0xdb2DE1a460e46117D2544C46E3819D56e4D98F91', //vault
+    earnedToken: 'ceazCRE8RCoda',
+    earnedTokenAddress: '0x068D9D09DDC1Cf2b66A4C32eD74fFE68Db0b5f1B', //vault
+    earnContractAddress: '0x068D9D09DDC1Cf2b66A4C32eD74fFE68Db0b5f1B', //vault
     pricePerFullShare: 1,
     tvl: 0,
     oracle: 'tokens',
@@ -103,7 +103,7 @@ export const fantomPools = [
     stratType: 'Compounder',
     withdrawalFee: '0.01%',
     buyTokenUrl:
-      'https://beets.fi/#/pool/0xbb4607bede4610e80d35c15692efcb7807a2d0a6000200000000000000000140',
+      'https://beets.fi/#/pool/0xa1bfdf81ed709283c03ce5c78b105f39fd7fe119000200000000000000000609',
     createdAt: 1722574935,
   },
   // {

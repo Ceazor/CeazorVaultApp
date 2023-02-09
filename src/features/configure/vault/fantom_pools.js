@@ -30,7 +30,7 @@ export const fantomPools = [
       'CONTRACTS_VERIFIED',
     ],
     stratType: 'Compounder',
-    withdrawalFee: '0.01%',
+    withdrawalFee: '0%',
     buyTokenUrl: 'https://beets.fi/#/stake',
     createdAt: 1622574935,
   },
@@ -65,7 +65,7 @@ export const fantomPools = [
       'CONTRACTS_VERIFIED',
     ],
     stratType: 'Compounder',
-    withdrawalFee: '0.01%',
+    withdrawalFee: '0%',
     buyTokenUrl:
       'https://beets.fi/#/pool/0xbb4607bede4610e80d35c15692efcb7807a2d0a6000200000000000000000140',
     createdAt: 1622574935,
@@ -101,7 +101,7 @@ export const fantomPools = [
       'CONTRACTS_VERIFIED',
     ],
     stratType: 'Compounder',
-    withdrawalFee: '0.01%',
+    withdrawalFee: '0%',
     buyTokenUrl:
       'https://beets.fi/#/pool/0xa1bfdf81ed709283c03ce5c78b105f39fd7fe119000200000000000000000609',
     createdAt: 1722574935,

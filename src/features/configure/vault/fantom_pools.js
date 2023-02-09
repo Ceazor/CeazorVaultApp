@@ -36,7 +36,7 @@ export const fantomPools = [
   },
   {
     id: 'fantom-CRE8RBPT',
-    logo: 'fantom/CRE8RalCoda.png',
+    logo: 'fantom/Cre8rBPT.png',
     name: 'CRE8R in F-Major',
     token: 'CRE8RBPT',
     tokenDescription:
@@ -72,12 +72,12 @@ export const fantomPools = [
   },
   {
     id: 'fantom-CRE8RalCoda',
-    logo: 'fantom/CRE8RbbUSD.png',
+    logo: 'fantom/CRE8RalCoda.png',
     name: 'CRE8R al Coda',
     token: 'BPT-CRE8R-C',
     tokenDescription:
       'Beethoven to earn Beets which are converted to ceazfBEETS and compounded',
-    tokenAddress: '0x8c63702D4D4A521A6a8ECEc8AB8F7CE9d1D6299e', //want
+    tokenAddress: '0xA1BfDf81eD709283C03Ce5C78B105f39FD7fE119', //want
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
     earnedToken: 'ceazCRE8RCoda',

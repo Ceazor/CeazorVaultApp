@@ -1,7 +1,7 @@
 export const optimismPools = [
   {
     id: 'BPT-rETH-ETH',
-    logo: 'OP-pair/BPTrETH.png',
+    logo: 'OP-pairs/BPTrETH.png',
     name: 'Rocket Fuel Autocompounder',
     token: 'BPT-rETH-ETH',
     tokenDescription: 'Beethoven-x to earn OP and BAL then compounds to more BPTs.',

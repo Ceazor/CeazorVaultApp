@@ -40,7 +40,7 @@ export const optimismPools = [
     name: 'Galactic Dragon Autocompounder',
     token: 'IBT-IBRETH',
     tokenDescription: 'Beethoven-x to earn OP and BAL then compounds to more BPTs, as well as taking out a % to convert into ceazrETH for xCheese',
-    tokenAddress: '0x4fd63966879300cafafbb35d157dc5229278ed23', //want token
+    tokenAddress: '0x785F08fB77ec934c01736E30546f87B4daccBe50', //want token
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
     earnedToken: 'ceazIBBPT',

@@ -126,7 +126,7 @@ const PoolSummary = ({
             className={classes.itemInner}
           />
         </Grid>
-        <Grid item xs={120} className={`${classes.item} ${classes.itemTitle}`}>
+        <Grid item xs={12} className={`${classes.item} ${classes.itemTitle}`}>
           <Typography className={classes.subtitle} variant="body2">
             {t('Vault-Description', { vault: pool.tokenDescription })}
           </Typography>

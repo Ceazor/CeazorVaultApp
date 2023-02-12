@@ -84,5 +84,9 @@
   "lint-staged": {
     "*.js": "prettier --write --ignore-unknown",
     "*.json": "prettier --write --ignore-unknown"
+  },
+  "resolutions": {
+    "//": "See https://github.com/facebook/create-react-app/issues/11773",
+    "react-error-overlay": "6.0.9"
   }
 }

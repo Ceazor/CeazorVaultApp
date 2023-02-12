@@ -31,4 +31,5 @@ export { arbitrumPools } from './vault/arbitrum_pools';
 export { polygonZaps } from './zap/polygon_zaps';
 export { fantomZaps } from './zap/fantom_zaps';
 export { arbitrumZaps } from './zap/arbitrum_zaps';
+export { optimismZaps } from './zap/optimism_zaps';
 export { nativeCoins } from './native_coins';

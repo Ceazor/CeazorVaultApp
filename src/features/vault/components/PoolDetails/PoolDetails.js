@@ -193,7 +193,7 @@ const PoolDetails = ({ vaultId }) => {
               className={classes.itemInner}
             />
           </Grid>
-          <Grid item xs={120} className={''}>
+          <Grid item xs={12} className={''}>
             <Typography className={classes.subtitle} variant="body2">
               {t('Vault-Description', { vault: pool.tokenDescription })}
             </Typography>

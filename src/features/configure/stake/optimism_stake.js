@@ -1,25 +1,30 @@
 import { govPoolABI } from '../abi';
-
+//FIXME - add correct info after deployment of xCheese
+// strategy address?
 export const optimismStakePools = [
   {
-    id: 'NA',
-    name: 'BIFI',
+    id: 'optimism-bifi-gov',
+    name: 'BIFI Earnings Pool',
     logo: 'single-assets/BIFI.png',
     token: 'BIFI',
     tokenDecimals: 18,
-    tokenAddress: '0x99C409E5f62E4bd2AC142f17caFb6810B8F0BAAE',
+    tokenAddress: '0x4E720DD3Ac5CFe1e1fbDE4935f386Bb1C66F4642',
     tokenOracle: 'tokens',
     tokenOracleId: 'BIFI',
-    earnedToken: 'ETH',
+    earnedToken: 'WETH',
     earnedTokenDecimals: 18,
-    earnedTokenAddress: '0x82aF49447D8a07e3bd95BD0d56f35241523fBab1',
-    earnContractAddress: '0x48F4634c8383aF01BF71AefBC125eb582eb3C74D',
+    earnedTokenAddress: '0x4200000000000000000000000000000000000006',
+    earnContractAddress: '0x61645aE7BB524C2ea11cF90D673079EE2AbbB961',
     earnContractAbi: govPoolABI,
     earnedOracle: 'tokens',
-    earnedOracleId: 'ETH',
+    earnedOracleId: 'WETH',
     partnership: false,
-    status: 'active',
+    status: 'closed',
     fixedStatus: true,
+    faq: {
+      description: 'some description',
+      showCheeseRate: true,
+    },
     partners: [
       {
         logo: 'stake/beefy/beefyfinance.png',

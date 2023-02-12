@@ -33,7 +33,7 @@ const fetchTokens = async () => {
     const response = await axios.get(`${apiUrl}/prices?_=${cacheBuster}`);
     const data = await axios.get(yApiUrl);
     console.log(data);
-    const fbeetsPrice = data.data.find((e: any) => e.symbol === 'yvfBEETS').tvl.price;
+    const fbeetsPrice = data.data.find(e => e.symbol === 'yvfBEETS').tvl.price;
     response.data['fBEETS'] = fbeetsPrice;
     return response.data;
   } catch (err) {

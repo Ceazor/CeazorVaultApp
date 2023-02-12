@@ -34,4 +34,39 @@ export const optimismPools = [
       'https://op.beets.fi/pool/0x4fd63966879300cafafbb35d157dc5229278ed2300020000000000000000002b',
     createdAt: 1622574935,
   },
+  {
+    id: 'IBT-IBRETH',
+    logo: 'OP-pairs/IBBPT.png',
+    name: 'Galactic Dragon Autocompounder',
+    token: 'IBT-IBRETH',
+    tokenDescription: 'Beethoven-x to earn OP and BAL then compounds to more BPTs, as well as taking out a % to convert into ceazrETH for xCheese',
+    tokenAddress: '0x4fd63966879300cafafbb35d157dc5229278ed23', //want token
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'ceazIBBPT',
+    earnedTokenAddress: '0xd94210Cbf1D62Ff6E1C4B28552FEbcBF6aF378CB', // vault token
+    earnContractAddress: '0xd94210Cbf1D62Ff6E1C4B28552FEbcBF6aF378CB', // vault token
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'tokens',
+    oracleId: 'IBRETH',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'Beethoven-X',
+    assets: ['IBRETH'],
+    risks: [
+      'COMPLEXITY_LOW',
+      'BATTLE_TESTED',
+      'IL_NONE',
+      'MCAP_MEDIUM',
+      'AUDIT',
+      'CONTRACTS_VERIFIED',
+    ],
+    stratType: 'Compounder',
+    withdrawalFee: '0.01%',
+    buyTokenUrl:
+      'https://op.beets.fi/pool/0x785f08fb77ec934c01736e30546f87b4daccbe50000200000000000000000041',
+    createdAt: 1622574935,
+  },
 ];

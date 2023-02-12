@@ -4,6 +4,7 @@ import WalletConnectProvider from '@walletconnect/web3-provider';
 import { DeFiConnector } from 'deficonnect';
 import WalletLink from 'walletlink';
 import { CloverConnector } from '@clover-network/clover-connector';
+import { addressBook } from 'blockchain-addressbook';
 import { allNetworks } from '../../network';
 import {
   fantomPools,
@@ -22,6 +23,7 @@ import {
   optimismPools,
   optimismStakePools,
   optimismAddressBook,
+  optimismZaps,
 } from '../configure';
 
 export const appNetworkId = window.REACT_APP_NETWORK_ID;
@@ -163,6 +165,8 @@ export const getNetworkZaps = () => {
       return fantomZaps;
     case 42161:
       return arbitrumZaps;
+    case 10:
+      return optimismZaps;
     case 42220:
     default:
       return [];
@@ -289,6 +293,8 @@ export const getNetworkStables = () => {
 
 export const getNetworkMulticall = () => {
   switch (window.REACT_APP_NETWORK_ID) {
+    case 10:
+      return addressBook.optimism.platforms.beefyfinance.multicall;
     case 56:
       return '0xB94858b0bB5437498F5453A16039337e5Fdc269C';
     case 128:

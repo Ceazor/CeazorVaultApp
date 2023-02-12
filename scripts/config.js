@@ -11,8 +11,8 @@ export const chainPools = {
 };
 
 export const chainRpcs = {
-  fantom: process.env.FANTOM_RPC || 'https://rpc.ftm.tools/',
-  polygon: process.env.POLYGON_RPC || 'https://polygon-rpc.com',
-  arbitrum: process.env.ARBITRUM_RPC || 'https://arb1.arbitrum.io/rpc',
-  optimism: process.env.OPTIMISM_RPC || 'https://mainnet.optimism.io',
+  fantom: process.env.REACT_APP_FANTOM_RPC || 'https://rpc.ftm.tools/',
+  polygon: process.env.REACT_APP_POLYGON_RPC || 'https://polygon-rpc.com',
+  arbitrum: process.env.REACT_APP_ARBITRUM_RPC || 'https://arb1.arbitrum.io/rpc',
+  optimism: process.env.REACT_APP_OPTIMISM_RPC || 'https://mainnet.optimism.io',
 };

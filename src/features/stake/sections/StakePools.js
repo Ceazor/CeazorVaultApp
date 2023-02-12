@@ -37,7 +37,7 @@ export default function StakePools() {
           <ToggleButton value="closed">Finished</ToggleButton>
         </ToggleButtonGroup>
       </Grid>
-      <Grid container spacing={4} justify={'center'}>
+      <Grid container spacing={4} justifyContent={'center'}>
         {Object.values(launchpools).map(pool => (
           <StakePoolsPool key={pool.id} pool={pool} showPools={showPools} classes={classes} t={t} />
         ))}

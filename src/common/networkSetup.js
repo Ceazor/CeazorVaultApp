@@ -201,7 +201,17 @@ export const networkSetup = chainId => {
   });
 };
 
+const rpcUrls = {
+  250: process.env.REACT_APP_FANTOM_RPC,
+  42161: process.env.REACT_APP_ARBITRUM_RPC,
+  10: process.env.REACT_APP_OPTIMISM_RPC,
+  137: process.env.REACT_APP_POLYGON_RPC,
+};
+
 export const getRpcUrl = () => {
   const settings = networkSettings[window.REACT_APP_NETWORK_ID];
-  return settings.rpcUrls[~~(settings.rpcUrls.length * Math.random())];
+  return (
+    rpcUrls[window.REACT_APP_NETWORK_ID] ??
+    settings.rpcUrls[~~(settings.rpcUrls.length * Math.random())]
+  );
 };

@@ -4,9 +4,10 @@ import { Accordion, AccordionDetails, Typography } from '@material-ui/core';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Web3 from 'web3';
+import { getRpcUrl } from 'common/networkSetup';
 import CHEESE_ABI from 'abi/strategy-extracheese.json';
 
-const web3 = new Web3('https://rpc.ankr.com/fantom/');
+const web3 = new Web3(getRpcUrl());
 function CheeseQA({
   tokenName,
   description,
@@ -29,7 +30,7 @@ function CheeseQA({
       console.log(cheeseRate);
       setCheese(cheeseRate);
     })();
-  }, [web3, strategyAddress]);
+  }, [strategyAddress, showCheeseRate]);
   return (
     <Accordion square expanded={expanded === tokenName} onChange={handleChange(tokenName)}>
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>

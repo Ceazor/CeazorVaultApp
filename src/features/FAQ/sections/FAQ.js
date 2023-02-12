@@ -22,7 +22,7 @@ export default function FAQ() {
 
   return (
     <Grid container>
-      <Grid container spacing={4} justify={'center'}>
+      <Grid container spacing={4} justifyContent={'center'}>
         <Grid className={classes.faq} item xs={12} lg={9}>
           <Accordion square expanded={expanded === 'faq-1'} onChange={handleChange('faq-1')}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
@@ -31,9 +31,12 @@ export default function FAQ() {
             <AccordionDetails>
               <Typography>
                 Stake your tokens in a vault to gain a ceazTOKEN, ie ceazFBEETS, then stake your
-                ceazTOKEN in an appliciable farm on Extra Cheese 🧀 to earn additional rewards.
-                These rewards may come from various sources suchs as bribes, rewards incentives, or
-                fee sharing.
+                ceazTOKEN in an appliciable farm on Extra Cheese{' '}
+                <span role="img" aria-label="cheese">
+                  🧀
+                </span>{' '}
+                to earn additional rewards. These rewards may come from various sources suchs as
+                bribes, rewards incentives, or fee sharing.
               </Typography>
             </AccordionDetails>
           </Accordion>

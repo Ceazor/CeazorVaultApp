@@ -4,7 +4,7 @@ import { govPoolABI } from '../abi';
 export const optimismStakePools = [
   {
     id: 'ceazIBBPT XCheese',
-    name: 'xCheese for ceazIBBPT',
+    name: 'ceazIBBPT',
     logo: 'xCheese/ceazrETHBPT.png',
     token: 'ceazIBBPT',
     tokenDecimals: 18,

@@ -300,6 +300,7 @@ export default function StakePool(props) {
         </Grid>
         <Grid item xs={6} sm={6} md={3}>
           {avatar}
+          <Typography className={classes.subtitle}>{t('Stake-Reward-Image')},</Typography>
         </Grid>
       </Grid>
 
@@ -310,21 +311,17 @@ export default function StakePool(props) {
           poolStatus === 'closed' || poolStatus === 'soon' ? classes.retired : '',
         ].join(' ')}
       >
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={6}>
           <Typography className={classes.title}>{formatDecimals(poolStaked)}</Typography>
           <Typography className={classes.subtitle}>
             {t('Stake-Total-Value-Locked', { mooToken: launchpool.token })}
           </Typography>
         </Grid>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={6}>
           <Typography className={classes.title}>
             <NetworkRequired loader>{formatPercent(myPoolShare, 4)}</NetworkRequired>
           </Typography>
           <Typography className={classes.subtitle}>{t('Stake-Your-Pool')}%</Typography>
-        </Grid>
-        <Grid item xs={12} sm={4}>
-          <Typography className={classes.title}>{formatApy(poolApr)}</Typography>
-          <Typography className={classes.subtitle}>{t('Vault-APR')}</Typography>
         </Grid>
 
         {poolStatus === 'closed' || poolStatus === 'soon' ? (

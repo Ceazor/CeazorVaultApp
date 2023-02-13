@@ -5,6 +5,7 @@ import styles from './styles/list';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { fantomStakePools } from 'features/configure';
+import { optimismStakePools } from 'features/configure';
 import CheeseQA from './CheeseQA';
 const useStyles = makeStyles(styles);
 
@@ -13,6 +14,7 @@ export default function FAQ() {
   const [expanded, setExpanded] = React.useState('faq-1');
   //todo: make work with other chains
   const openFantomStakePools = fantomStakePools.filter(({ status }) => status !== 'closed');
+  const openOptimismStakePools = optimismStakePools.filter(({ status }) => status !== 'closed');
   const handleChange = useCallback(
     panel => (event, newExpanded) => {
       setExpanded(newExpanded ? panel : false);
@@ -41,6 +43,18 @@ export default function FAQ() {
             </AccordionDetails>
           </Accordion>
           {openFantomStakePools.map(t => (
+            <CheeseQA
+              description={t.faq.description}
+              extraCheeseAddress={t.earnContractAddress}
+              handleChange={handleChange}
+              showCheeseRate={t.faq.showCheeseRate}
+              strategyAddress={t.strategyAddress}
+              vaultAddress={t.tokenAddress}
+              expanded={expanded}
+              tokenName={t.token}
+            />
+          ))}
+          {openOptimismStakePools.map(t => (
             <CheeseQA
               description={t.faq.description}
               extraCheeseAddress={t.earnContractAddress}

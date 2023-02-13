@@ -3,38 +3,45 @@ import { govPoolABI } from '../abi';
 // strategy address?
 export const optimismStakePools = [
   {
-    id: 'optimism-bifi-gov',
-    name: 'BIFI Earnings Pool',
-    logo: 'single-assets/BIFI.png',
-    token: 'BIFI',
+    id: 'ceazIBBPT XCheese',
+    name: 'xCheese for ceazIBBPT',
+    logo: 'xCheese/ceazrETHBPT.png',
+    token: 'ceazIBBPT',
     tokenDecimals: 18,
-    tokenAddress: '0x4E720DD3Ac5CFe1e1fbDE4935f386Bb1C66F4642',
+    tokenAddress: '0xd94210Cbf1D62Ff6E1C4B28552FEbcBF6aF378CB', // stake token
     tokenOracle: 'tokens',
-    tokenOracleId: 'BIFI',
-    earnedToken: 'WETH',
+    tokenOracleId: '',
+    earnedToken: 'ceazrETHBPT',
     earnedTokenDecimals: 18,
-    earnedTokenAddress: '0x4200000000000000000000000000000000000006',
-    earnContractAddress: '0x61645aE7BB524C2ea11cF90D673079EE2AbbB961',
+    earnedTokenAddress: '0x068D9D09DDC1Cf2b66A4C32eD74fFE68Db0b5f1B', // reward token
+    earnContractAddress: '0x8bE5ED8aA02061Be44B08b7ff7b34E4e8Cb7A6c8', // xCheese Contract
     earnContractAbi: govPoolABI,
     earnedOracle: 'tokens',
-    earnedOracleId: 'WETH',
+    earnedOracleId: '',
     partnership: false,
-    status: 'closed',
+    status: 'active', //closed or active
     fixedStatus: true,
+    strategyAddress: '0x6c0833eDE9937c977aDeA380848C115211c85C4b',
     faq: {
-      description: 'some description',
-      showCheeseRate: true,
+      description: `This vault accepts Galactic Dragon Beethoven-X Liquidity Pool tokens and stakes
+      them on Beethoven-X to earn BAL, OP, and sometimes IB tokens. It then harvests the rewards and
+      takes out the performance fee. It then uses a percent of the BAL and OP to create Extra Cheese. 
+      The ExtraCheese Rate shows what percent is converted to ceazrETHBPT and sent to ExtraCheese stakers. To
+      get the ExtraCheese, stake your ceazIBBPT vault token in Extra Cheese. The remaining BAL and OP and any 
+      IB tokens are compounded into more Galactic Dragon LP tokens and added to the vault`,
+      showCheeseRate: false,
     },
     partners: [
       {
-        logo: 'stake/beefy/beefyfinance.png',
-        logoNight: 'stake/beefy/beefyfinance_night.png',
-        background: 'stake/beefy/background.png',
-        text: "Beefy Finance is The Multi-Chain Yield Optimizer across many sidechains, enabling users to earn autocompounded yield on their crypto. Did you know also that you can own a piece of Beefy itself? Beefy runs on its governance token, BIFI. The token has a set supply of 80,000 across all chains; no more may be minted, ever! As a holder of BIFI you may create and vote on important DAO proposals, and you become dividend-eligible to earn a share of every compounding harvest on Beefy vaults, hour by hour. Here on Arbitrum, you just need to stake BIFI in this reward pool, or in the autocompounding BIFI Maxi vault on the main page. For this pool, ETH dividends are gathered and sent proportionally to each staker. Stake here, return later to claim the ETH you've earned.",
-        website: 'https://app.beefy.finance',
+        logo: 'single-assets/IB.png',
+        background: '',
+        text: `Iron Bank is a decentralized lending platform focused on capital efficiency allowing protocols and individuals to 
+        supply and borrow cryptocurrencies on Ethereum, Optimism, Avalanche and Fantom. It is helping build a better and safer DeFi lending ecosystem, 
+        by driving capital efficiency with trusted entities as the liquidity infrastructure and backbone for DeFi and CeFi',
+        website: 'https://app.ib.xyz/`,
         social: {
-          telegram: 'http://t.me/beefyfinance',
-          twitter: 'https://twitter.com/beefyfinance',
+          DISCORD: 'https://discord.com/invite/4HwFTcjY78',
+          twitter: 'https://twitter.com/ibdotxyz',
         },
       },
     ],

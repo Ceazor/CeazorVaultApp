@@ -5,7 +5,7 @@ export const fantomPools = [
     name: 'FBEETS Compounder',
     token: 'FBEETS',
     tokenDescription:
-      'Beethoven-x to compound Beets. The fBEETS voting power is used to vote on the CRE8R:FTM & CRE8R:bbUSD Beethoven-X gauges.',
+      'Beethoven-x to compound Beets. The fBEETS voting power is used to vote on the CRE8R:USDC Beethoven-X gauge.',
     tokenAddress: '0xfcef8a994209d6916eb2c86cdd2afd60aa6f54b1', //want token
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
@@ -35,48 +35,12 @@ export const fantomPools = [
     createdAt: 1622574935,
   },
   {
-    id: 'fantom-CRE8RBPT',
-    logo: 'fantom/Cre8rBPT.png',
-    name: 'CRE8R in F-Major',
-    token: 'CRE8RBPT',
-    tokenDescription:
-      'Beethoven to earn Beets and CRE8R. CRE8R are compounded into the CRE8RBPT, and the BEETS are converted to ceazFBeets for xCheese',
-    tokenAddress: '0xbb4607beDE4610e80d35C15692eFcB7807A2d0A6', //want
-    tokenDecimals: 18,
-    tokenDescriptionUrl: '#',
-    earnedToken: 'ceazCRE8RBPT',
-    earnedTokenAddress: '0xC93dd4F61C4598192f6c150Af38a58514eB3abbe', //vault
-    earnContractAddress: '0xC93dd4F61C4598192f6c150Af38a58514eB3abbe', //vault
-    pricePerFullShare: 1,
-    tvl: 0,
-    oracle: 'tokens',
-    oracleId: 'CRE8R',
-    oraclePrice: 0,
-    depositsPaused: false,
-    status: 'active',
-    platform: 'Beethoven-X',
-    assets: ['CRE8R'],
-    risks: [
-      'COMPLEXITY_LOW',
-      'BATTLE_TESTED',
-      'IL_NONE',
-      'MCAP_MEDIUM',
-      'AUDIT',
-      'CONTRACTS_VERIFIED',
-    ],
-    stratType: 'Compounder',
-    withdrawalFee: '0%',
-    buyTokenUrl:
-      'https://beets.fi/#/pool/0xbb4607bede4610e80d35c15692efcb7807a2d0a6000200000000000000000140',
-    createdAt: 1622574935,
-  },
-  {
     id: 'fantom-CRE8RalCoda',
     logo: 'fantom/CRE8RalCoda.png',
     name: 'CRE8R al Coda',
     token: 'BPT-CRE8R-C',
     tokenDescription:
-      'Beethoven to earn Beets which are converted to ceazfBEETS and compounded',
+      'Beethoven to earn Beets. Some of the BEETS are sold for USDC and compounded, and a % are converted to ceazFBeets for xCheese',
     tokenAddress: '0xA1BfDf81eD709283C03Ce5C78B105f39FD7fE119', //want
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
@@ -106,6 +70,42 @@ export const fantomPools = [
       'https://beets.fi/#/pool/0xa1bfdf81ed709283c03ce5c78b105f39fd7fe119000200000000000000000609',
     createdAt: 1722574935,
   },
+  // {
+  //   id: 'fantom-CRE8RBPT',
+  //   logo: 'fantom/Cre8rBPT.png',
+  //   name: 'CRE8R in F-Major',
+  //   token: 'CRE8RBPT',
+  //   tokenDescription:
+  //     'Beethoven to earn Beets. Some of the BEETS are sold for FTM and compounded, and a % are converted to ceazFBeets for xCheese',
+  //   tokenAddress: '0xbb4607beDE4610e80d35C15692eFcB7807A2d0A6', //want
+  //   tokenDecimals: 18,
+  //   tokenDescriptionUrl: '#',
+  //   earnedToken: 'ceazCRE8RBPT',
+  //   earnedTokenAddress: '0xC93dd4F61C4598192f6c150Af38a58514eB3abbe', //vault
+  //   earnContractAddress: '0xC93dd4F61C4598192f6c150Af38a58514eB3abbe', //vault
+  //   pricePerFullShare: 1,
+  //   tvl: 0,
+  //   oracle: 'tokens',
+  //   oracleId: 'CRE8R',
+  //   oraclePrice: 0,
+  //   depositsPaused: false,
+  //   status: 'active',
+  //   platform: 'Beethoven-X',
+  //   assets: ['CRE8R'],
+  //   risks: [
+  //     'COMPLEXITY_LOW',
+  //     'BATTLE_TESTED',
+  //     'IL_NONE',
+  //     'MCAP_MEDIUM',
+  //     'AUDIT',
+  //     'CONTRACTS_VERIFIED',
+  //   ],
+  //   stratType: 'Compounder',
+  //   withdrawalFee: '0%',
+  //   buyTokenUrl:
+  //     'https://beets.fi/#/pool/0xbb4607bede4610e80d35c15692efcb7807a2d0a6000200000000000000000140',
+  //   createdAt: 1622574935,
+  // },
   // {
   //   id: 'fantom-hMIM',
   //   logo: 'single-assets/MIM.png',

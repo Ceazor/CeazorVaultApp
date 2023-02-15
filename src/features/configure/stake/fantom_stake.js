@@ -49,48 +49,50 @@ export const fantomStakePools = [
     ],
   },
 
-  {
-    id: 'CRE8R al Coda ceazFBeets XCheese',
-    name: 'CRE8R al Coda',
-    logo: 'single-assets/ceazFBeets.png', //reward image
-    token: 'ceazCRE8RCoda',
-    tokenDecimals: 18,
-    tokenAddress: '0x068D9D09DDC1Cf2b66A4C32eD74fFE68Db0b5f1B', // ceazVault staking token
-    tokenOracle: 'tokens',
-    tokenOracleId: 'BEETS',
-    earnedToken: 'ceazFBeets',
-    earnedTokenDecimals: 18,
-    earnedTokenAddress: '0x58e0ac1973f9d182058e6b63e7f4979bc333f493', // reward token
-    earnContractAddress: '0x0000000000000000', // xCheese Contract
-    earnContractAbi: govPoolABI,
-    earnedOracle: 'tokens',
-    earnedOracleId: 'BEETS',
-    partnership: false,
-    status: 'closed',
-    fixedStatus: true,
-    strategyAddress: '0x7fF9e32C4D8359b19b7269220E73fb12Afa300C9',
-    faq: {
-      description: `This vault accepts CRE8R al Coda Beethoven-X Liquidity Pool tokens and stakes
-      them on Beethoven-X to earn BEETS. It then harvests the rewards and
-      takes out the performance fee. It then uses a percent of the
-      BEETS to add to the liquidity pool. The ExtraCheese Rate shows what percent is kept and zapped into the
-      autocompounding ceazFBEETS vault and sends the ceazFBEETS tokens to ExtraCheese. To
-      get the ExtraCheese ceazFBEETS, stake your ceazCRE8RCoda vault token in Extra Cheese.`,
-      showCheeseRate: true,
-    },
-    partners: [
-      {
-        logo: 'stake/Beethoven-x/Beets-hero.png',
-        background: '',
-        text: 'Built on Balancer V2, Beethoven X is the first next-generation AMM protocol on Fantom Opera.',
-        website: 'https://beets.fi/#/',
-        social: {
-          DISCORD: 'https://discord.gg/jedS4zGk28',
-          twitter: 'https://twitter.com/beethoven_x',
-        },
-      },
-    ],
-  },
+  // below needs deployment
+
+  // {
+  //   id: 'CRE8R al Coda ceazFBeets XCheese',
+  //   name: 'CRE8R al Coda',
+  //   logo: 'single-assets/ceazFBeets.png', //reward image
+  //   token: 'ceazCRE8RCoda',
+  //   tokenDecimals: 18,
+  //   tokenAddress: '0x068D9D09DDC1Cf2b66A4C32eD74fFE68Db0b5f1B', // ceazVault staking token
+  //   tokenOracle: 'tokens',
+  //   tokenOracleId: 'BEETS',
+  //   earnedToken: 'ceazFBeets',
+  //   earnedTokenDecimals: 18,
+  //   earnedTokenAddress: '0x58e0ac1973f9d182058e6b63e7f4979bc333f493', // reward token
+  //   earnContractAddress: '0x0000000000000000', // xCheese Contract
+  //   earnContractAbi: govPoolABI,
+  //   earnedOracle: 'tokens',
+  //   earnedOracleId: 'BEETS',
+  //   partnership: false,
+  //   status: 'closed',
+  //   fixedStatus: true,
+  //   strategyAddress: '0x7fF9e32C4D8359b19b7269220E73fb12Afa300C9',
+  //   faq: {
+  //     description: `This vault accepts CRE8R al Coda Beethoven-X Liquidity Pool tokens and stakes
+  //     them on Beethoven-X to earn BEETS. It then harvests the rewards and
+  //     takes out the performance fee. It then uses a percent of the
+  //     BEETS to add to the liquidity pool. The ExtraCheese Rate shows what percent is kept and zapped into the
+  //     autocompounding ceazFBEETS vault and sends the ceazFBEETS tokens to ExtraCheese. To
+  //     get the ExtraCheese ceazFBEETS, stake your ceazCRE8RCoda vault token in Extra Cheese.`,
+  //     showCheeseRate: true,
+  //   },
+  //   partners: [
+  //     {
+  //       logo: 'stake/Beethoven-x/Beets-hero.png',
+  //       background: '',
+  //       text: 'Built on Balancer V2, Beethoven X is the first next-generation AMM protocol on Fantom Opera.',
+  //       website: 'https://beets.fi/#/',
+  //       social: {
+  //         DISCORD: 'https://discord.gg/jedS4zGk28',
+  //         twitter: 'https://twitter.com/beethoven_x',
+  //       },
+  //     },
+  //   ],
+  // },
 
   // // EVERYTHING BELOW HERE IS CLOSED
 

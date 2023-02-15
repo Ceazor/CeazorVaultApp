@@ -42,11 +42,15 @@ function CheeseQA({
           <br />
           Contracts:
           <br />
-          <a href={`https://ftmscan.com/address/${vaultAddress}`}>Vault: {vaultAddress}</a>
+          <a href={`https://optimistic.etherscan.io/address/${vaultAddress}`}>
+            Vault: {vaultAddress}
+          </a>
           <br />
-          <a href={`https://ftmscan.com/address/${strategyAddress}`}>Strategy: {strategyAddress}</a>
+          <a href={`https://optimistic.etherscan.io/address/${strategyAddress}`}>
+            Strategy: {strategyAddress}
+          </a>
           <br />
-          <a href={`https://ftmscan.com/address/${extraCheeseAddress}`}>
+          <a href={`https://optimistic.etherscan.io/address/${extraCheeseAddress}`}>
             ExtraCheese: {extraCheeseAddress}
           </a>
           {cheese && (
